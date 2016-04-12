@@ -10,17 +10,15 @@
 
 
 
-/* ~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~ */
+  /* ~~~~~~~~~~~~~~~~~~~ Header ~~~~~~~~~~~~~~~~~~~ */
 
-  .header 
+  .header
     max-width: 100%
     width: 100%
     padding: 1em 0
 
 
-/*=====================
-    brand
-=====================*/
+  // brand =====================
   .brand
     -webkit-box-align: baseline
     -webkit-align-items: baseline
@@ -74,12 +72,8 @@
     -o-transition: all 0.75s ease 0s
     transition: all 0.75s ease 0s
 
-
-.navbar span
-
-
-/* hero content
-=======================*/
+// hero content
+// =======================
 .hero .content
   width: 100%
   bottom: 0
@@ -93,10 +87,12 @@
   position: relative
   -webkit-transform: translateY(-30%)
   -ms-transform: translateY(-30%)
-   transform: translateY(-30%)
+  transform: translateY(-30%)
 
 .hero .content h1, .hero .content h5
-  text-align: center width: 100%letter-spacing: 0rem
+  text-align: center
+  width: 100%
+  letter-spacing: 0rem
 
 .hero .content h1
   text-transform: uppercase
@@ -152,7 +148,7 @@
     opacity: 1
     height: 1000% !important
 
-   .navbar a
+  .navbar a
     font-size: 1.8rem
     letter-spacing: 0.1rem
 
@@ -186,7 +182,7 @@
     top: 50%
     -webkit-transform: translateY(-50%)
     -ms-transform: translateY(-50%)
-     transform: translateY(-50%)
+    transform: translateY(-50%)
 
   .hero .content h5
     font-weight: 400
@@ -225,12 +221,11 @@
     margin: 0 auto
 
 
-/*
-clients
+/* clients
  /////////////////////////*/
 .clients
   margin-bottom: 3em
-  background-color:#F0F0F0
+  background-color: #F0F0F0
   padding: 0
   margin-left: 0
   margin-right: 0
@@ -268,9 +263,7 @@ clients
   background: none
 
 
-/*
-services
- /////////////////////////*/
+/* services /////////////////////////*/
 .services, .team, .timeline
   text-align: center
   color: #5D7992
@@ -320,7 +313,8 @@ services
   font-weight: 400
   margin-bottom: 5rem
 
-.service .flex-column.five  padding-right: 3rem
+.service .flex-column.five
+  padding-right: 3rem
 
 @media (min-width: 48em)
   .services h1, .team h1, .timeline h1
@@ -332,11 +326,9 @@ services
 
 
 
-/*//////////////////////////////////////////////////
-//////////////////////////////////////////////////
-action
- /////////////////////////*/
-   .action
+  /* action
+  /////////////////////////*/
+  .action
     padding: 0
     /*margin-bottom: 3rem*/
     position: relative
@@ -345,10 +337,7 @@ action
   .action .flex-container, .action .flex-column
     padding: 0
 
-
-
-
-   .action img
+  .action img
     position: relative
     display: block
     width: 100%
@@ -419,7 +408,7 @@ action
       margin-bottom: 2rem
 
     .action .button
-        font-size: 2rem
+      font-size: 2rem
 
 
   @media (min-width: 62em)
@@ -434,10 +423,11 @@ action
 
 
 
-  /*<div class="flex-column">
-    <span> or call</span>
-    <span class="tel">+46 31-799 90 40</span>
-  </div>
+  // <div class="flex-column">
+  //   <span> or call</span>
+  //   <span class="tel">+46 31-799 90 40</span>
+  // </div>
+
   .action span:first-child
   margin-right: 1rem
 
@@ -451,10 +441,9 @@ action
     text-decoration: underline
     color: rgb(255, 218, 108)
 
-  */
 
-/* team
-=============================================*/
+
+/* team =============================================*/
 
 .team
   background-color: #F7F9FA
@@ -501,12 +490,8 @@ action
 .card .social .fa-stack:hover
   border: 1px solid #fff
 
-
-
 .fa-inverse:hover
   color: #ffffff
-
-
 
 .card
   position: relative
@@ -527,13 +512,11 @@ action
   -moz-box-shadow: 0 14px 15px 0 rgba(0,0,0,0.2)
   box-shadow: 0 14px 15px 0 rgba(0,0,0,0.2)
 
-/*.card, .card:hover
-  -webkit-transition: all 1s ease 0s
-  -moz-transition: all 1s ease 0s
-  -o-transition: all 1s ease 0s
-  transition: all 1s ease 0s
-
-*/
+// .card, .card:hover
+//   -webkit-transition: all 1s ease 0s
+//   -moz-transition: all 1s ease 0s
+//   -o-transition: all 1s ease 0s
+//   transition: all 1s ease 0s
 
 .card img
   position: relative
@@ -558,9 +541,8 @@ action
   filter: gray
 
 
-/* footer
-=============================================
-=============================================*/
+  // footer
+  // ==========================================
   .footer
     width: 100%
     height: 100% /*100vh*/
@@ -605,24 +587,25 @@ action
     padding: 0
 
 
-/*  .footer .content
-    position: relative
-    padding: 5rem 1rem 0 1rem
-    color: #ffffff
-    text-align: center
-    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2)
-    /*top: 5%*/
-    /*bottom: 10%*/
-    /*width: 100%
-    z-index: 2
-  */
-  .footer .brand a
-    -webkit-filter: grayscale(100%)
-    -moz-filter: grayscale(100%)
-    -ms-filter: grayscale(100%)
-    -o-filter: grayscale(100%)
-    filter: grayscale(100%)
-    filter: gray
+
+  // .footer .content
+  //   position: relative
+  //   padding: 5rem 1rem 0 1rem
+  //   color: #ffffff
+  //   text-align: center
+  //   text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2)
+  //   /*top: 5%*/
+  //   /*bottom: 10%*/
+  //   /*width: 100%
+  //   z-index: 2
+  //
+  // .footer .brand a
+  //   -webkit-filter: grayscale(100%)
+  //   -moz-filter: grayscale(100%)
+  //   -ms-filter: grayscale(100%)
+  //   -o-filter: grayscale(100%)
+  //   filter: grayscale(100%)
+  //   filter: gray
 
 
 .footer .brand span
@@ -677,7 +660,7 @@ action
   color: rgb(255, 54, 93)
   font-size: 1.2rem
 
- .footer .tel, .footer .mail
+.footer .tel, .footer .mail
   color: rgb(255, 54, 93)
 
 .footer .top .social a:before
@@ -685,11 +668,11 @@ action
 
 
 
- .footer .bottom
-    text-align: center
+.footer .bottom
+  text-align: center
 
-  .footer .bottom .flex-column
-    margin-bottom: 0
+.footer .bottom .flex-column
+  margin-bottom: 0
 
 .footer address
   font-size: 1.3rem
@@ -747,15 +730,10 @@ action
   .footer address
     display: block
 
-
-
-
-
-
-
 /*~~~~~~~~~~~~~~~~~~~ Company ~~~~~~~~~~~~~~~~~~~*/
 
-.company   background-image: url("../images/company_bg.png")
+.company
+  background-image: url("../images/company_bg.png")
 .company .content h1
   font-weight: 700
   /* font-size: 4rem */
@@ -768,8 +746,10 @@ action
   background-position: center
   background-size: contain
 
-.intro .header   background-image: url("../images/company_intro_bg.png")
-.intro .details  background-image: url("../images/company_details_bg.png")
+.intro .header
+  background-image: url("../images/company_intro_bg.png")
+.intro .details
+  background-image: url("../images/company_details_bg.png")
 
 .intro  h1
   font-size: 3rem
@@ -787,7 +767,7 @@ action
   margin-bottom: 0
 
 
- .divider
+.divider
   border-image: url("../images/hr_line.png") 0 30 10 20 stretch repeat
   border-width: 1px
   background-repeat: no-repeat
@@ -814,7 +794,7 @@ action
 
 
 #company .services .header h1, #company .timeline h1
-    margin-bottom: 1rem
+  margin-bottom: 1rem
 
 
 .service .fs .fa-border,
@@ -825,9 +805,12 @@ action
   border-width: 1px
   border-color: rgba(45, 64, 91, 0.5)
 
-.service .fs .fa-border, .service .os .fa-border  padding: 0.5em 0.40em 0.30em
-.service .ss .fa-border  padding: 0.3em 0.27em 0.5em
-.service .ts .fa-border  padding: 0.5em 0.34em 0.30em
+.service .fs .fa-border, .service .os .fa-border
+  padding: 0.5em 0.40em 0.30em
+.service .ss .fa-border
+  padding: 0.3em 0.27em 0.5em
+.service .ts .fa-border
+  padding: 0.5em 0.34em 0.30em
 
 #company .action h2
   font-size: 3rem
@@ -907,10 +890,10 @@ action
   #company .timeline .epoch .title
     display: none
 
-/*  #company .timeline .epoch .title p
-    font-size: 1.3rem
-    font-weight: 400
-  */
+// #company .timeline .epoch .title p
+//   font-size: 1.3rem
+//   font-weight: 400
+
 #company .timeline .epoch .details .title p
   color: rgb(208, 216, 224)
   font-size: 1.5rem
@@ -927,17 +910,17 @@ action
   width: 100%
 
 
-/*.timeline .epoch .pic span:after
-  content: ''
-  width: 100%
-  height: 6px
-  background: #2D4059
-  position: absolute
-  left: 0
-  top: 59px
-  transform: rotate(90deg)
-  z-index: -1
-*/
+//.timeline .epoch .pic span:after
+//   content: ''
+//   width: 100%
+//   height: 6px
+//   background: #2D4059
+//   position: absolute
+//   left: 0
+//   top: 59px
+//   transform: rotate(90deg)
+//   z-index: -1
+
 
 @media (min-width: 34em)
   #company .action figcaption
@@ -977,7 +960,7 @@ action
     margin-bottom: 1rem
 
   #company .timeline .epoch .title
-      display: block
+    display: block
 
   #company .timeline .epoch .title.even
     -webkit-order: -1
@@ -985,59 +968,59 @@ action
     order: -1
 
   #company .timeline .epoch .details .title h4
-      display: none
+    display: none
 
   #company .timeline .epoch:before
-      content: ''
-      background: #2D4059
-      z-index: -1
-      position: absolute
-      left: 49.6%
-      height: 150%
-      width: 5px
-      top: 0
+    content: ''
+    background: #2D4059
+    z-index: -1
+    position: absolute
+    left: 49.6%
+    height: 150%
+    width: 5px
+    top: 0
 
   #company .timeline .epoch .details.even
-      -webkit-order: 1
-      -ms-flex-order: 1
-      order: 1
-      border-left: 0.6rem solid rgb(255, 54, 93)
-      border-right: none
+    -webkit-order: 1
+    -ms-flex-order: 1
+    order: 1
+    border-left: 0.6rem solid rgb(255, 54, 93)
+    border-right: none
 
   #company .timeline .epoch .details
-      -webkit-order: -1
-      -ms-flex-order: -1
-      order: -1
-      border: 1px solid #222
-      border-radius: 0.6rem
-      padding: 1rem
-      background-color: #2D4059
-      border-right: 0.6rem solid rgb(255, 54, 93)
+    -webkit-order: -1
+    -ms-flex-order: -1
+    order: -1
+    border: 1px solid #222
+    border-radius: 0.6rem
+    padding: 1rem
+    background-color: #2D4059
+    border-right: 0.6rem solid rgb(255, 54, 93)
 
   #company .timeline .epoch .details:after
-      content: ''
-      position: absolute
-      width: 2.5rem
-      height: 2.5rem
-      border: 1px solid rgb(255, 54, 93)
-      transform: scale(0.707) rotate(45deg)
-      right: -1.6rem
-      left: initial
-      /*left: 28.6rem*/
-      top: 1.5rem
-      background-color: rgb(255, 54, 93)
-      z-index: -1
-      border-radius: 0.4rem
+    content: ''
+    position: absolute
+    width: 2.5rem
+    height: 2.5rem
+    border: 1px solid rgb(255, 54, 93)
+    transform: scale(0.707) rotate(45deg)
+    right: -1.6rem
+    left: initial
+    /*left: 28.6rem*/
+    top: 1.5rem
+    background-color: rgb(255, 54, 93)
+    z-index: -1
+    border-radius: 0.4rem
 
   #company .timeline .epoch .details.even:after
-        left: -1.6rem
-      top: 1.5rem
+    left: -1.6rem
+    top: 1.5rem
 
   .timeline .epoch .pic
-      /* -webkit-order: -1 */
-      -ms-flex-order: -1
-      order: 0
-      padding-top: 1rem
+    /* -webkit-order: -1 */
+    -ms-flex-order: -1
+    order: 0
+    padding-top: 1rem
 
   .timeline .title h4
     font-size: 3rem
@@ -1048,9 +1031,6 @@ action
     color:rgb(255, 54, 93)
     font-size: 1.6rem
     font-weight: 600
-
-
-
 
 
 

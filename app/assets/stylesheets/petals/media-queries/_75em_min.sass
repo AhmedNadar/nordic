@@ -1,0 +1,267 @@
+/*// Extra large devices (large desktops, 75em / 1200px and up)*/
+@media screen and (min-width: 75em)
+  // GRID
+  .large-one, .large-two, .large-three, .large-four, .large-five, .large-six, .large-seven, .large-eight, .large-nine, .large-ten, .large-eleven, .large-twelve
+    -webkit-transition: all 0.75s ease 0s
+    -moz-transition: all 0.75s ease 0s
+    -o-transition: all 0.75s ease 0s
+    transition: all 0.75s ease 0s
+    position: relative
+    min-height: 1px
+    padding-right: 1.5rem
+    padding-left: 1.5rem
+
+  .large-one
+    width: 8.333%
+    max-width: 8.333%
+    -webkit-flex: 0 0 8.333%
+    -ms-flex: 0 0 8.333%
+    flex: 0 0 8.333%
+  .offset-one
+    margin-left: 8.33333%
+
+  .large-two
+    width: 16.666%
+    max-width: 16.666%
+    -webkit-flex: 0 0 16.666%
+    -ms-flex: 0 0 16.666%
+    flex: 0 0 16.666%
+  .offset-two
+    margin-left: 16.66667%
+
+  .large-three
+    width: 25%
+    max-width: 25%
+    -webkit-flex: 0 0 25%
+    -ms-flex: 0 0 25%
+    flex: 0 0 25%
+  .offset-three
+    margin-left: 25%
+
+  .large-four
+    width: 33.333%
+    max-width: 33.333%
+    -webkit-flex: 0 0 33.333%
+    -ms-flex: 0 0 33.333%
+    flex: 0 0 33.333%
+  .offset-four
+    margin-left: 33.33333%
+
+  .large-five
+    width: 41.667%
+    max-width: 41.667%
+    -webkit-flex: 0 0 41.667%
+    -ms-flex: 0 0 41.667%
+    flex: 0 0 41.667%
+  .offset-five
+    margin-left: 41.66667%
+
+  .large-six
+    width: 50%
+    max-width: 50%
+    -webkit-flex: 0 0 50%
+    -ms-flex: 0 0 50%
+    flex: 0 0 50%
+  .offset-six
+    margin-left: 50%
+
+  .large-seven
+    width: 58.333%
+    max-width: 58.333%
+    -webkit-flex: 0 0 58.333%
+    -ms-flex: 0 0 58.333%
+    flex: 0 0 58.333%
+  .offset-seven
+    margin-left: 58.33333%
+
+  .large-eight
+    width: 66.667%
+    max-width: 66.667%
+    -webkit-flex: 0 0 66.667%
+    -ms-flex: 0 0 66.667%
+    flex: 0 0 66.667%
+  .offset-eight
+    margin-left: 66.66667%
+
+  .large-nine
+    width: 75%
+    max-width: 75%
+    -webkit-flex: 0 0 75%
+    -ms-flex: 0 0 75%
+    flex: 0 0 75%
+  .offset-nine
+    margin-left: 75%
+
+  .large-ten
+    width: 83.333%
+    max-width: 83.333%
+    -webkit-flex: 0 0 83.333%
+    -ms-flex: 0 0 83.333%
+    flex: 0 0 83.333%
+  .offset-ten
+    margin-left: 83.33333%
+
+  .large-eleven
+    width: 91.667%
+    max-width: 91.667%
+    -webkit-flex: 0 0 91.667%
+    -ms-flex: 0 0 91.667%
+    flex: 0 0 91.667%
+  .offset-eleven
+    margin-left: 91.66667%
+
+  .large-twelve
+    width: 100%
+    max-width: 100%
+    -webkit-flex: 0 0 100%
+    -ms-flex: 0 0 100%
+    flex: 0 0 100%
+  .offset-none
+    margin-left: 0%
+
+
+  // offsets
+  // .offset  margin-left: 1em margin-right: 1em
+  // .offset-none    margin-left: 0%
+  // .offset-one     margin-left: 8.33333%
+  // .offset-two     margin-left: 16.66667%
+  // .offset-three   margin-left: 25%
+  // .offset-four    margin-left: 33.33333%
+  // .offset-five    margin-left: 41.66667%
+  // .offset-six     margin-left: 50%
+  // .offset-seven   margin-left: 58.33333%
+  // .offset-eight   margin-left: 66.66667%
+  // .offset-nine    margin-left: 75%
+  // .offset-ten     margin-left: 83.33333%
+  // .offset-eleven  margin-left: 91.66667%
+
+
+  // horizontal alignment
+  // ===================================
+  .align-left
+    -webkit-box-pack: start
+    -webkit-justify-content: flex-start
+    -ms-flex-pack: start
+    justify-content: flex-start
+    text-align: start
+
+  .align-center
+    -webkit-justify-content: center
+    -ms-flex-pack: center
+    justify-content: center
+    text-align: center
+
+  .align-right
+    -webkit-justify-content: flex-end
+    -ms-flex-pack: end
+    justify-content: flex-end
+    text-align: end
+
+  .align-justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+    text-align: space-between
+
+  .align-spaced
+    -webkit-justify-content: space-around
+    -ms-flex-pack: distribute
+    justify-content: space-around
+
+
+  /* vertical alignment
+  // ===================================
+  .top-column
+    -webkit-box-align: start
+    -webkit-align-items: flex-start
+    -ms-flex-align: start
+    align-items: flex-start
+
+  .middle-column
+    -webkit-box-align: center
+    -webkit-align-items: center
+    -ms-flex-align: center
+    align-items: center
+
+  .bottom-column
+    -webkit-box-align: end
+    -webkit-align-items: flex-end
+    -ms-flex-align: end
+    align-items: flex-end
+
+
+  // DISTRIBUTION
+  // ===================================
+  .arround-column
+    -webkit-justify-content: space-around
+    -ms-flex-pack: distribute
+    justify-content: space-around
+
+  .between-column
+    -webkit-box-pack: justify
+    -webkit-justify-content: space-between
+    -ms-flex-pack: justify
+    justify-content: space-between
+
+
+  // ORDER
+  // ===================================
+  .order-first-column
+    -webkit-order: -1
+    -ms-flex-order: -1
+    order: -1
+
+  .order-last-column, .order-one-column
+    -webkit-order: 1
+    -ms-flex-order: 1
+    order: 1
+
+  .order-two-columns
+    -webkit-order: 2
+    -ms-flex-order: 2
+    order: 2
+
+  .order-three-columns
+    -webkit-order: 3
+    -ms-flex-order: 3
+    order: 3
+
+  .order-four-columns
+    -webkit-order: 4
+    -ms-flex-order: 4
+    order: 4
+
+  .order-five-columns
+    -webkit-order: 5
+    -ms-flex-order: 5
+    order: 5
+
+  .order-six-columns
+    -webkit-order: 6
+    -ms-flex-order: 6
+    order: 6
+
+
+  // reserve
+  // ===================================
+  .row-reverse
+    flex-direction: row-reverse
+
+  .column-reverse
+    flex-direction: column-reverse
+
+
+  // colored column ordered
+  // ===================================
+  .order-first-column  > p,
+  .order-last-column   > p,
+  .order-one-column    > p,
+  .order-two-columns   > p,
+  .order-three-columns > p,
+  .order-four-columns  > p,
+  .order-five-columns  > p,
+  .order-six-columns   > p
+    background-color:rgba(132, 0, 140, 1)
+
+  .flex-container
+    width: 1170px

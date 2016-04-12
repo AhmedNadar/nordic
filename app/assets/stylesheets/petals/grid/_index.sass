@@ -1,0 +1,65 @@
+// FLEX GRID
+// ===================
+.flex-layout
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  flex-flow: column wrap
+  max-width: 100%
+  width: 100%
+  /*max-width: 1440px  Desktop HD*/
+  margin: 0 auto
+  padding: 0
+  overflow: auto
+  min-height: 100vh
+
+.flex-vertical-layout
+  flex-flow: row wrap
+  min-height: 0vh
+  margin: 1rem 0
+
+.flex-layout-fluid
+  padding-right: 0
+  padding-left: 0
+  margin-right: auto
+  margin-left: auto
+
+.wrapper
+  width: auto
+  padding: 2rem
+  margin: 0 auto
+
+.flex-container
+  margin-left: auto
+  margin-right: auto
+  padding-right: 1rem
+  padding-left: 1rem
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  -webkit-flex-flow: row wrap
+  -ms-flex-flow: row wrap
+  flex-flow: row wrap
+
+.flex-container .auto-column
+  -webkit-box-flex: 0
+  -webkit-flex: 0 0 auto
+  -ms-flex: 0 0 auto
+  flex: 0 0 auto
+
+.flex-column, .flex-columns, .flex-row
+  padding-left: 0.5rem
+  padding-right: 0.5rem
+  -webkit-flex: 1 1 0px
+  -ms-flex: 1 1 0px
+  flex: 1 1 0px
+
+.large-column
+  height: 20rem
+
+.auto-row, .auto-column, .auto-columns
+  -webkit-box-flex: 0
+  -webkit-flex: 0 0 auto
+  -ms-flex: 0 0 auto
+  flex: 0 0 auto
