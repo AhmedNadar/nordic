@@ -1,6 +1,6 @@
 .hero {
   padding: 0 0 2.5rem 0;  /* padding-bottom: 40px; */
-  background-image: url("hero_bg.png");
+  background: asset-url('hero_bg.png') no-repeat center center;
   height: 100vh;
   background-size: cover;
   background-position: center;
@@ -756,7 +756,10 @@ action
 
 /*~~~~~~~~~~~~~~~~~~~ Company ~~~~~~~~~~~~~~~~~~~*/
 
-.company  { background-image: url("company_bg.png"); }
+.company  {
+  background: asset-url('company_bg.png') no-repeat center center;
+}
+
 .company .content h1 {
   font-weight: 700;
   /* font-size: 4rem; */
@@ -769,8 +772,14 @@ action
   background-position: center;
   background-size: contain;
 }
-.intro .header  { background-image: url("company_intro_bg.png");   }
-.intro .details { background-image: url("company_details_bg.png"); }
+.intro .header  {
+  // background-image:url('<%= asset_path("company_intro_bg.png") %> ')
+  background: asset-url('company_intro_bg.png') no-repeat center center;
+  }
+.intro .details {
+  // background-image:url('<%= asset_path("company_details_bg.png") %> ');
+  background: asset-url('company_details_bg.png') no-repeat center center;
+}
 
 .intro  h1{
   font-size: 3rem;
@@ -789,7 +798,8 @@ action
 }
 
  .divider {
-  border-image: url("hr_line.png") 0 30 10 20 stretch repeat;
+  // border-image: url('<%= asset_path("hr_line.png")%>') 0 30 10 20 stretch repeat;
+  border-image: asset-url('hr_line.png') 0 30 10 20 stretch repeat;
   border-width: 1px;
   background-repeat: no-repeat;
   background-position: center;
@@ -840,7 +850,8 @@ action
 
 #company .timeline {
   width: 100%;
-  background-image: url("timeline_bg.png");
+  // background-image:url('<%= asset_path("timeline_bg.png") %> ');
+  background: asset-url('timeline_bg.png') no-repeat center center;
   z-index: 1;
 }
 #company .timeline section:nth-child(2):before {
@@ -892,7 +903,7 @@ action
     background-color: rgb(255, 54, 93);
     z-index: -1;
     border-radius: 0.4rem;
-}
+  }
 
 
   #company .timeline .epoch .details .title{
@@ -1085,7 +1096,10 @@ action
 /*
 clients
 */
-.clientspage  { background-image: url("header_bg.png"); }
+.clientspage  {
+  // background-image:url('<%= asset_path("header_bg.png") %> ');
+  background: asset-url('header_bg.png') no-repeat center center;
+}
 #clients .services .brand{
   text-align: center;
 }
@@ -1149,8 +1163,10 @@ clients
 /*
 contacts
 */
-.contact  { background-image: url("contact_bg.png"); }
-
+.contact  {
+  // background-image:url('<%= asset_path("contact_bg.png") %> ');
+  background: asset-url('contact_bg.png') no-repeat center center;
+}
 
 #contact .services .brand img {
     margin-bottom: 1rem;
