@@ -756,7 +756,7 @@ action
 
 /*~~~~~~~~~~~~~~~~~~~ Company ~~~~~~~~~~~~~~~~~~~*/
 
-.company  { background-image: url("../images/company_bg.png"); }
+.company  { background-image: url("company_bg.png"); }
 .company .content h1 {
   font-weight: 700;
   /* font-size: 4rem; */
@@ -769,8 +769,8 @@ action
   background-position: center;
   background-size: contain;
 }
-.intro .header  { background-image: url("../images/company_intro_bg.png");   }
-.intro .details { background-image: url("../images/company_details_bg.png"); }
+.intro .header  { background-image: url("company_intro_bg.png");   }
+.intro .details { background-image: url("company_details_bg.png"); }
 
 .intro  h1{
   font-size: 3rem;
@@ -789,7 +789,7 @@ action
 }
 
  .divider {
-  border-image: url("../images/hr_line.png") 0 30 10 20 stretch repeat;
+  border-image: url("hr_line.png") 0 30 10 20 stretch repeat;
   border-width: 1px;
   background-repeat: no-repeat;
   background-position: center;
@@ -840,7 +840,7 @@ action
 
 #company .timeline {
   width: 100%;
-  background-image: url("../images/timeline_bg.png");
+  background-image: url("timeline_bg.png");
   z-index: 1;
 }
 #company .timeline section:nth-child(2):before {
@@ -1085,7 +1085,7 @@ action
 /*
 clients
 */
-.clientspage  { background-image: url("../images/header_bg.png"); }
+.clientspage  { background-image: url("header_bg.png"); }
 #clients .services .brand{
   text-align: center;
 }
@@ -1149,7 +1149,7 @@ clients
 /*
 contacts
 */
-.contact  { background-image: url("../images/contact_bg.png"); }
+.contact  { background-image: url("contact_bg.png"); }
 
 
 #contact .services .brand img {

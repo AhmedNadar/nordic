@@ -9,7 +9,7 @@
               </a>
               <figcaption>
                 <span>Consulting</span>
-                <p>&#169; RSG  2015 All rights reserved</p>
+                <p>&#169; RSG 2016 All rights reserved</p>
               </figcaption>
             </figure>
           </div>
@@ -17,11 +17,17 @@
             <h6>Company</h6>
             <section class="flex-container align-center">
               <div class="flex-column large-twelve">
+                <%= link_to "home", root_path %>
+              </div>
+              <div class="flex-column large-twelve">
                 <%= link_to "about", company_path %>
               </div>
-              <div class="flex-column large-twelve"><a href="#">services</a></div>
-              <div class="flex-column large-twelve"><a href="#">clients</a></div>
-              <div class="flex-column large-twelve"><a href="#">contacts</a></div>
+              <div class="flex-column large-twelve">
+                <%= link_to "services", company_path %>
+              </div>
+              <div class="flex-column large-twelve">
+                <%= link_to "contacts", contact_path %>
+              </div>
             </section>
           </div>
           <div class="flex-column twelve large-three align-left margin-2rem-bottom">
@@ -38,8 +44,7 @@
             <section class="flex-container align-center margin-2rem-bottom social">
               <div class="flex-column">
                 <a href="#" target="_blank">
-                  <i class="fa fa-envelope-square fa-2x"></i>
-                  <!-- <a class="mail" href="mailto:nordic@rsg.se">nordic@rsg.se</a> -->
+                  <a href="mailto:nordic@rsg.se"><i class="fa fa-envelope-square fa-2x"></i></a>
                 </a>
               </div>
               <div class="flex-column">
@@ -48,7 +53,7 @@
                 </a>
               </div>
               <div class="flex-column">
-                <a href="#" target="_blank">
+                <a href="https://twitter.com/nordic_rsg" target="_blank">
                   <i class="fa fa-twitter-square fa-2x"></i>
                 </a>
               </div>
@@ -58,7 +63,7 @@
                 </a>
               </div>
               <div class="flex-column">
-                <a href="#" target="_blank">
+                <a href="https://plus.google.com/118023480434666318174" target="_blank">
                   <i class="fa fa-google-plus-square fa-2x"></i>
                 </a>
               </div>
@@ -92,7 +97,7 @@
         </section>
         <section class="flex-container bottom">
           <div class="flex-column twelve toronto">
-            <p>Made with <i class="fa fa-heart"></i> in <a href="mailto:ahmednadar@gmail.com">Toronto</a></p>
+            <p>Made with <i class="fa fa-heart"></i> in Toronto by <a href="http://www.ahmednadar.com">Ahmed Nadar</a></p>
           </div>
       </section>
     </article>

@@ -1,114 +1,17 @@
-      <article class="wrapper hero">
-        <header class="header">
-          <section class="flex-container align-justify">
-            <div class="flex-column twelve medium-four large-four">
-              <figure class="brand">
-                <a target="_blank" href="http://www.rgsnordic.com?ref=brand" class="navbar-brand">
-                  <img src="assets/Logo_nordic.png" alt="Nordic" width="auto" height="auto">
-                </a>
-              </figure>
-            </div>
-            <div class="flex-column twelve medium-eight large-eight">
-              <nav class="navbar navbar-right">
-                <ul class="align-right">
-                  <li class="flex-column three medium-three large-two">
-                    <a href="index.html">
-                      <span>Home</span>
-                    </a>
-                  </li>
-                  <li class="flex-column three medium-three large-two">
-                    <a href="company.html">
-                      <span>Company</span>
-                    </a>
-                  </li>
-                  <li class="flex-column three medium-three large-two">
-                    <a href="clients.html">
-                      <span>Clients</span>
-                    </a>
-                  </li>
-                  <li class="flex-column three medium-three large-two">
-                    <a href="contact.html">
-                      <span>Contact</span>
-                    </a>
-                  </li>
-                </ul>
-              </nav>
-            </div>
-          </section>
-        </header>
-        <div class="content">
-          <section class="flex-container">
-            <div class="flex-column">
-
-              <h1>we provide <span class="helighted">smart</span> solution for <span class="helighted">business</span> &amp; <span class="helighted">people</span></h1>
-
-              <h5>we partner with clients to create human-centric digital experiences that grow with their business</h5>
-
-              <a href="#" class="small-eight six medium-four large-four button hero-button">see our services</a>
-            </div>
-          </section>
-        </div><!-- content -->
-      </article>
-      <!-- hero -->
-
-
-
-
-
-<header class="header header-transparent margin-20-bottom" role="navigation">
-  <section class="flex-container align-justify">
-    <div class="flex-column twelve medium-four">
-      <figure class="brand">
-        <a target="_blank" href="http://www.rgsnordic.com?ref=brand" class="navbar-brand">
-          <img src="/assets/Logo_nordic.png" alt="Nordic" width="auto" height="auto">
-        </a>
-      </figure>
-    </div>
-
-    <div class="flex-column twelve medium-eight">
-      <nav class="navbar navbar-right">
-        <ul class="align-right">
-          <li class="flex-column three medium-three large-two">
-            <%= link_to root_path do %>
-              <span>Home</span>
-            <% end %>
-          </li>
-          <li class="flex-column three medium-three large-two">
-            <%= link_to company_path do %>
-              <span>Company</span>
-            <% end %>
-          </li>
-          <li class="flex-column three medium-three large-two">
-            <%= link_to root_path do %>
-              <span>Clients</span>
-            <% end %>
-          </li>
-          <li class="flex-column three medium-three large-two">
-            <%= link_to root_path do %>
-              <span>Contact</span>
-            <% end %>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-</header>
-
-
-<article class="wrapper full-page">
+<article class="wrapper hero">
+  <%= render 'layouts/wrappers/header' %>
   <div class="content">
-    <img src="/assets/hero_bg.png" class="hero">
     <section class="flex-container">
       <div class="flex-column">
-        <div class="content">
-          <h1>we provide <span class="highlighted">smart</span> solution for <span class="highlighted">business</span> &amp; <span class="highlighted">people</span></h1>
 
-          <h5>we partner with clients to create human-centric digital experiences that grow with their business</h5>
+        <h1>we provide <span class="helighted">smart</span> solution for <span class="helighted">business</span> &amp; <span class="helighted">people</span></h1>
 
-          <a href="#" class="small-eight six medium-four large-four button hero-button">see our services</a>
-        </div>
+        <h5>we partner with clients to create human-centric digital experiences that grow with their business</h5>
+
+        <a href="#" class="small-eight six medium-four large-four button hero-button">see our services</a>
       </div>
     </section>
   </div><!-- content -->
 </article>
 <!-- hero -->
+
