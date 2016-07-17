@@ -1,0 +1,365 @@
+/* FLEX GRID
+// ==============================
+.flex-layout
+  display: -webkit-box
+  display: -webkit-flex
+  display: -ms-flexbox
+  display: flex
+  flex-flow: column wrap
+  max-width: 100%
+  width: 100%
+  // max-width: 1440px  Desktop HD
+  margin: 0 auto
+  padding: 0
+  overflow: auto
+  min-height: 100vh
+  position: relative
+
+.flex-vertical-layout
+  flex-flow: row wrap
+  min-height: 0vh
+  margin: 1rem 0
+
+.flex-layout-fluid
+  padding-right: 0
+  padding-left: 0
+  margin-right: auto
+  margin-left: auto
+
+.flex-container
+  @extend %flex
+  @extend %flex-flow-row-wrap
+  margin-left: auto
+  margin-right: auto
+  padding-right: 1rem
+  padding-left: 1rem
+
+.full-image .flex-container
+  z-index: 3
+  position: absolute
+  width: 100%
+  height: 100%
+  display: block
+  top: 0
+
+.auto-column
+  -webkit-box-flex: 0
+  -webkit-flex: 0 0 auto
+  -ms-flex: 0 0 auto
+  flex: 0 0 auto
+
+.wrapper
+  width: auto
+  padding: 2rem
+  margin: 0 auto
+  +transition-cubic(all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1))
+  left: 0
+  // background-color: white
+  background-color: transparent
+
+.flex-column, .flex-columns, .flex-row
+  padding-left: 0.5rem
+  padding-right: 0.5rem
+  -webkit-flex: 1 1 0px
+  -ms-flex: 1 1 0px
+  flex: 1 1 0px
+
+@media (min-width: 48em)
+  .flex-column, .flex-columns, .flex-row
+    padding-left: 0.5rem
+    padding-right: 0.5rem
+
+@media (min-width: 48em)
+  .column, .columns
+    padding-left: 0.9375rem
+    padding-right: 0.9375rem
+
+
+/* GRID
+// ===================
+.one, .two, .three, .four, .five, .six, .seven, .eight, .nine, .ten, .eleven, .twelve
+  +transition(all 0.75s ease 0s)
+  position: relative
+  min-height: 1px
+  // padding-right: 1.5rem
+  // padding-left: 1.5rem
+
+.one
+  width: 8.333%
+  max-width: 8.333%
+  -webkit-flex: 0 0 8.333%
+  -ms-flex: 0 0 8.333%
+  flex: 0 0 8.333%
+.offset-one
+  margin-left: 8.33333%
+
+.two
+  width: 16.666%
+  max-width: 16.666%
+  -webkit-flex: 0 0 16.666%
+  -ms-flex: 0 0 16.666%
+  flex: 0 0 16.666%
+.offset-two
+  margin-left: 16.66667%
+
+.three
+  width: 25%
+  max-width: 25%
+  -webkit-flex: 0 0 25%
+  -ms-flex: 0 0 25%
+  flex: 0 0 25%
+.offset-three
+  margin-left: 25%
+
+.four
+  width: 33.333%
+  max-width: 33.333%
+  -webkit-flex: 0 0 33.333%
+  -ms-flex: 0 0 33.333%
+  flex: 0 0 33.333%
+.offset-four
+  margin-left: 33.33333%
+
+.five
+  width: 41.667%
+  max-width: 41.667%
+  -webkit-flex: 0 0 41.667%
+  -ms-flex: 0 0 41.667%
+  flex: 0 0 41.667%
+.offset-five
+  margin-left: 41.66667%
+
+.six
+  width: 50%
+  max-width: 50%
+  -webkit-flex: 0 0 50%
+  -ms-flex: 0 0 50%
+  flex: 0 0 50%
+.offset-six
+  margin-left: 50%
+
+.seven
+  width: 58.333%
+  max-width: 58.333%
+  -webkit-flex: 0 0 58.333%
+  -ms-flex: 0 0 58.333%
+  flex: 0 0 58.333%
+.offset-seven
+  margin-left: 58.33333%
+
+.eight
+  width: 66.667%
+  max-width: 66.667%
+  -webkit-flex: 0 0 66.667%
+  -ms-flex: 0 0 66.667%
+  flex: 0 0 66.667%
+.offset-eight
+  margin-left: 66.66667%
+
+.nine
+  width: 75%
+  max-width: 75%
+  -webkit-flex: 0 0 75%
+  -ms-flex: 0 0 75%
+  flex: 0 0 75%
+.offset-nine
+  margin-left: 75%
+
+.ten
+  width: 83.333%
+  max-width: 83.333%
+  -webkit-flex: 0 0 83.333%
+  -ms-flex: 0 0 83.333%
+  flex: 0 0 83.333%
+.offset-ten
+  margin-left: 83.33333%
+
+.eleven
+  width: 91.667%
+  max-width: 91.667%
+  -webkit-flex: 0 0 91.667%
+  -ms-flex: 0 0 91.667%
+  flex: 0 0 91.667%
+.offset-eleven
+  margin-left: 91.66667%
+
+.twelve
+  width: 100%
+  max-width: 100%
+  -webkit-flex: 0 0 100%
+  -ms-flex: 0 0 100%
+  flex: 0 0 100%
+.offset-none
+  margin-left: 0%
+
+
+
+/* offsets
+// ==============================
+/*  .offset  margin-left: 1em margin-right: 1em
+  .offset-none    margin-left: 0%
+  .offset-one     margin-left: 8.33333%
+  .offset-two     margin-left: 16.66667%
+  .offset-three   margin-left: 25%
+  .offset-four    margin-left: 33.33333%
+  .offset-five    margin-left: 41.66667%
+  .offset-six     margin-left: 50%
+  .offset-seven   margin-left: 58.33333%
+  .offset-eight   margin-left: 66.66667%
+  .offset-nine    margin-left: 75%
+  .offset-ten     margin-left: 83.33333%
+  .offset-eleven  margin-left: 91.66667% */
+
+
+
+// horizontal alignment
+// ==============================
+.align-left
+  -webkit-box-pack: start
+  -webkit-justify-content: flex-start
+  -ms-flex-pack: start
+  justify-content: flex-start
+  align-content: start
+
+.align-center
+  -webkit-justify-content: center
+  -ms-flex-pack: center
+  justify-content: center
+  align-content: center
+
+.align-right
+  -webkit-justify-content: flex-end
+  -ms-flex-pack: end
+  justify-content: flex-end
+  align-content: end
+
+.align-justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+  align-content: space-between
+
+.align-spaced
+  -webkit-justify-content: space-around
+  -ms-flex-pack: distribute
+  justify-content: space-around
+
+// vertical alignment
+// ==============================
+.top-column
+  -webkit-box-align: start
+  -webkit-align-items: flex-start
+  -ms-flex-align: start
+  align-items: flex-start
+
+.middle-column
+  -webkit-box-align: center
+  -webkit-align-items: center
+  -ms-flex-align: center
+  align-items: center
+
+.bottom-column
+  -webkit-box-align: end
+  -webkit-align-items: flex-end
+  -ms-flex-align: end
+  align-items: flex-end
+
+
+// DISTRIBUTION
+// ==============================
+.arround-column
+  -webkit-justify-content: space-around
+  -ms-flex-pack: distribute
+  justify-content: space-around
+
+.between-column
+  -webkit-box-pack: justify
+  -webkit-justify-content: space-between
+  -ms-flex-pack: justify
+  justify-content: space-between
+
+
+// ORDER
+// ==============================
+.order-first-column
+  -webkit-order: -1
+  -ms-flex-order: -1
+  order: -1
+
+.order-last-column, .order-one-column
+  -webkit-order: 1
+  -ms-flex-order: 1
+  order: 1
+
+.order-two-columns
+  -webkit-order: 2
+  -ms-flex-order: 2
+  order: 2
+
+.order-three-columns
+  -webkit-order: 3
+  -ms-flex-order: 3
+  order: 3
+
+.order-four-columns
+  -webkit-order: 4
+  -ms-flex-order: 4
+  order: 4
+
+.order-five-columns
+  -webkit-order: 5
+  -ms-flex-order: 5
+  order: 5
+
+.order-six-columns
+  -webkit-order: 6
+  -ms-flex-order: 6
+  order: 6
+
+
+// reserve
+//=============================
+.row-reverse,
+.column-reverse
+  display: flex
+
+.row-reverse
+  flex-direction: row-reverse
+
+.column-reverse
+  flex-direction: column-reverse
+
+
+/* colored column ordered
+// ==============================
+.order-first-column  > p,
+.order-last-column   > p,
+.order-one-column    > p,
+.order-two-columns   > p,
+.order-three-columns > p,
+.order-four-columns  > p,
+.order-five-columns  > p,
+.order-six-columns   > p
+  background-color: rgba(132, 0, 140, 1)
+
+.large-column
+  height: 20rem
+
+.auto-row, .auto-column, .auto-columns
+  -webkit-box-flex: 0
+  -webkit-flex: 0 0 auto
+  -ms-flex: 0 0 auto
+  flex: 0 0 auto
+
+@media (min-width: 48em)
+  .flex-container
+    // padding-right: 1.5rem
+    // padding-left: 1.5rem
+
+@media (min-width: 62em)
+  .flex-container
+    width: 970px
+
+@media (min-width: 75em)
+  .flex-container
+    width: 1170px

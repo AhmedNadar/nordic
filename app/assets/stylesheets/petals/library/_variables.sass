@@ -1,2 +1,52 @@
 // Typography
-// $base-font-family: $font-stack-open-sans
+$base-font-family: $font-stack-open-sans
+
+$white: #ffffff
+$black: #000000
+$black-less: #222222
+$gray: #333333
+$main-red: rgb(255, 54, 93)
+$highlighted :#FFDA6C
+$light-shadow :0px 1px 5px rgba(0, 0, 0, 0.5)
+
+// flexy stuff
+// ===========
+%flex
+  display: flex
+%inline-flex
+  display: inline-flex
+
+%flow-row-wrap
+  flex-flow: row wrap
+
+// defaults
+// ========
+%baseline
+  align-items: baseline
+
+// transformations
+// ===============
+%transformX0
+  transform: scaleX(0)
+  // -webkit-transform: scaleX(0)
+
+%transformY-30
+  // -webkit-transform: translateY(-30%)
+  // -ms-transform: translateY(-30%)
+  transform: translateY(-30%)
+
+// transitions
+// ===========
+%transitionAll3
+  // -webkit-transition: all 0.3s ease-in-out 0s
+  transition: all 0.3s ease-in-out 0s
+
+%transitionAll75
+  // -webkit-transition: all 0.75s ease 0s
+  // -moz-transition: all 0.75s ease 0s
+  // -o-transition: all 0.75s ease 0s
+  transition: all 0.75s ease 0s
+
+
+%transform-50Translate-50Rotate90
+  transform: translateY(-50%) translateX(-50%) rotate(90deg)

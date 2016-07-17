@@ -1,6 +1,7 @@
-/* Global Button Styles */
+// ~~~~~~~~~~~~~~~~~~~~~~~~ Buttons Styles ~~~~~~~~~~~~~~~~~~~~~~~~
+
 .button
-  @extend %flex
+  display: flex
   justify-content: center
   position: relative
   margin: 1rem 0
@@ -22,10 +23,10 @@
   border: 0.1rem solid $black
   border-radius: 0
   text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2)
-  -webkit-transition: all 1s ease
-  -moz-transition: all 1s ease
-  -o-transition: all 1s ease
-  transition: all 1s ease
+  -webkit-transition: $ease-transition
+  -moz-transition: $ease-transition
+  -o-transition: $ease-transition
+  transition: $ease-transition
 
 .button:after
   content: ""
@@ -35,10 +36,10 @@
   top: 50%
   width: 150%
   z-index: -1
-  -webkit-transition: all 0.75s ease 0s
-  -moz-transition: all 0.75s ease 0s
-  -o-transition: all 0.75s ease 0s
-  transition: all 0.75s ease 0s
+  -webkit-transition: $ease-transition
+  -moz-transition: $ease-transition
+  -o-transition: $ease-transition
+  transition: $ease-transition
 
 .button:hover
   color: $white

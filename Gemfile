@@ -10,7 +10,7 @@ gem 'jquery-rails'
 gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.6.2'
 
 group :development, :test do
   gem 'byebug'
@@ -19,4 +19,3 @@ end
 group :development do
   gem 'web-console', '~> 2.0'
 end
-
