@@ -1,11 +1,17 @@
 .hero {
   padding: 0 0 2.5rem 0;  /* padding-bottom: 40px; */
-  background: asset-url('hero_bg.png') no-repeat center center;
+  background-image: asset-url('hero_bg.png');
   height: 100vh;
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   margin: 0;
   width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  z-index: 2;
+  // position: absolute;
+  // display: block;
+
 }
 
 
@@ -750,14 +756,10 @@ action
   }
 }
 
-
-
-
-
 /*~~~~~~~~~~~~~~~~~~~ Company ~~~~~~~~~~~~~~~~~~~*/
 
 .company  {
-  background: asset-url('company_bg.png') no-repeat center center;
+  background-image: asset-url('company_bg.png');
 }
 
 .company .content h1 {
@@ -1098,7 +1100,7 @@ clients
 */
 .clientspage  {
   // background-image:url('<%= asset_path("header_bg.png") %> ');
-  background: asset-url('header_bg.png') no-repeat center center;
+  background-image: asset-url('header_bg.png');
 }
 #clients .services .brand{
   text-align: center;
@@ -1164,8 +1166,7 @@ clients
 contacts
 */
 .contact  {
-  // background-image:url('<%= asset_path("contact_bg.png") %> ');
-  background: asset-url('contact_bg.png') no-repeat center center;
+  background-image: asset-url('contact_bg.png');
 }
 
 #contact .services .brand img {
