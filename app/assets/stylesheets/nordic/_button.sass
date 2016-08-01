@@ -1,0 +1,44 @@
+// _button.sass
+
+@charset "UTF-8"
+
+
+.button
+  // =tulpe-button($font-color, $font-weight, $border-size, $border-color, $radius, $transition-speed)
+  +tulpe-button($white, 400, 0.15em, $highlighted, 0.7rem, 300ms )
+  &:after
+    content: " "
+    position: absolute
+    height: 0%
+    left: 50%
+    top: 50%
+    width: 150%
+    z-index: -1
+    -webkit-transition: all 0.75s ease 0s
+    transition: all 0.75s ease 0s
+
+.nordic-button
+  font-size:  0.9em
+  padding:    0.7em 0
+  margin:     1em 0
+  letter-spacing: .08rem
+  -webkit-transition: none
+  transition: none
+  &:after
+    background-color: $main-red
+    opacity: .5
+    // +yPos(-50%)
+    -webkit-transform: translateY(-50%) translateX(-50%) rotate(90deg)
+    transform: translateY(-50%) translateX(-50%) rotate(90deg)
+  &:before
+    content: ""
+    display: table
+    background: none
+  &:hover
+    color: $white
+    // text-shadow: none
+    border: 0.15em solid $main-red
+    // font-weight: bold
+  &:hover:after
+    opacity: 1
+    height: 900% !important
