@@ -1,0 +1,159 @@
+// _code.sass
+
+@charset "UTF-8"
+
+// Use an explicit font stack to ensure browsers render correct `line-height`.
+
+code, kbd, pre, samp
+  font-family: $font-stack-consolas
+  font-size: $font-code
+  text-transform: lowercase
+
+pre
+  max-height: none
+  background: #f9f9fa
+  border: 1px solid rgba(51,51,51,.1)
+  margin: 2em
+  padding: 2em
+  +border-all-radius(1em)
+  overflow-x: auto
+  padding: 1.25em
+  border-left-width: 5px
+  margin: 1.6em 0
+  white-space: pre
+  word-wrap: normal
+
+code
+  color: #000
+  background: transparent
+  text-shadow: 0 1px #fff
+  text-align: left
+  white-space: pre
+  word-spacing: normal
+  word-break: normal
+  word-wrap: normal
+  line-height: 1.5
+  -moz-tab-size: 4
+  -o-tab-size: 4
+  tab-size: 4
+  -webkit-hyphens: none
+  -ms-hyphens: none
+  hyphens: none
+
+
+// Preformatted
+// pre, code, samp, var, kbd
+//   font-family: $font-stack-monaco
+//   font-size: $font-size-base
+//   padding: 1em
+//   line-height: 1
+//   border-radius: $base-unit
+
+// pre
+//   color: rgba(0, 0, 0, .85)
+//   background: $off-white
+//   padding: 20px
+//   border-radius: 4px
+//   line-height: $base-line-small
+//   overflow: none
+//   white-space: pre-wrap
+//   word-wrap: break-word
+
+
+
+// code, kbd, pre, samp
+//   font-size: $font-size-base
+//   line-height: $base-line-height
+//   word-wrap: break-word
+//   font-family: $font-stack-monaco
+//   color: $body-gray-color
+//   background-color: $off-white
+//   font-weight: normal
+//   padding: 0
+//   white-space: pre-wrap
+
+// pre
+//   padding: 10px
+//   overflow: auto
+//   border: 1px solid $code-box-border
+//   border-radius: .7em
+
+
+
+
+
+
+// mark, code, samp, kbd
+//   font-family: $font-stack-monaco
+//   font-size: $font-size-small
+//   padding: 4px 8px 2px 8px
+//   display: inline-block
+//   line-height: 1
+//   border-radius: $base-unit
+//   color: rgba(0, 0, 0, .85)
+
+// pre, code
+//   font-size: 100%
+//   white-space: pre
+//   padding: 0
+//   background: none
+//   line-height: $base-line
+
+// mark
+//   background-color: $off-white
+//   background: none
+//   border-bottom: 1px solid
+//   color: inherit
+
+
+// // Preformatted
+// pre, code, samp, var, kbd
+//   color: rgba(0, 0, 0, .85)
+//   background: $off-white
+//   padding: 20px
+//   border-radius: 4px
+//   line-height: $base-line-small
+//   overflow: none
+//   white-space: pre-wrap
+//   overflow: auto
+
+
+// line numbers
+.line-numbers
+  font-family: $font-stack-monaco
+  list-style: decimal-leading-zero inside /* [2] */
+  white-space: nowrap                     /* [3] */
+  overflow: auto                          /* [3] */
+  margin-left: 0
+  .line-numbers code
+    white-space: pre                    /* [4] */
+
+
+// Add comments to your code examples, e.g.:
+// <code>&lt/div&gt<span class=code-comment>&lt!-- /wrapper --&gt</span></code>
+.code-comment
+  // Override this setting in your theme stylesheet
+  opacity: 0.75
+  filter: alpha(opacity=75)
+
+
+// You can add line numbers to your code examples but be warned, it requires
+// some pretty funky looking markup, e.g.:
+// <ol class=line-numbers>
+//   <li><code>.nav</code></li>
+//   <li><code>    list-style:none</code></li>
+//   <li><code>    margin-left:0</code></li>
+//   <li><code></code></li>
+//   <li><code>    .nav > li,</code></li>
+//   <li><code>        .nav > li > a</code></li>
+//   <li><code>            display:inline-block</code></li>
+//   <li><code>           *display:inline-block</code></li>
+//   <li><code>            zoom:1</code></li>
+//   <li><code>        </code></li>
+// </ol>
+
+
+ // * 1. Make the list look like code.
+ // * 2. Give the list flush numbers with a leading zero.
+ // * 3. Make sure lines of code don’t wrap.
+ // * 4. Give the code form by forcing the `code` to honour white-space.

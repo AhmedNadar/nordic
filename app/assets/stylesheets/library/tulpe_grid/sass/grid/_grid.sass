@@ -1,0 +1,358 @@
+// _grid.sass
+
+@charset "UTF-8"
+
+.flex-layout
+  +flexbox
+  +flex-wrap(wrap)
+  +flex-direction(column)
+  width: $max-width
+  margin: 0 auto
+  padding: 0
+  overflow: auto
+  min-height: 100vh
+  position: relative
+  @include respond-to(medium)
+    // min-width: 640px
+    // max-width: 1024px
+
+.flex-wrap
+  +flex-wrap(wrap)
+  min-height: 0vh
+  margin: 1rem 0
+  +flex-direction(column)
+
+.flex-layout-fluid
+  padding-right: 0
+  padding-left: 0
+  margin-right: auto
+  margin-left: auto
+
+// contain one or more wrapper/sections
+.container
+  position: relative
+  max-width: 100%
+
+.container-fluid
+  max-width: 1320px
+  // padding: $gutter * 2
+  // margin: 1em auto
+
+.container, .container-fluid
+  width: 100%
+  margin: 0 auto
+  +transition-cubic(all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1))
+  background-color: transparent
+
+// contain one or more column(s)
+.wrapper
+  +flexbox
+  +flex-wrap(wrap)
+  padding: 0
+  margin: 0 auto
+  width: 100%
+
+.auto-column
+  +flex(0, 0, auto)
+
+.column
+  +flex(1, 1, auto)
+  +transition(all 0.75s ease 0s)
+  +flex-direction(column)
+  +flex-wrap(wrap)
+  padding-right: .5rem
+  padding-left: .5rem
+  position: relative
+  min-height: 1em
+  margin: 0 auto 1em auto
+
+
+// offsets
+// =======
+.offset
+  margin-left: 1em
+  margin-right: 1em
+.offset-none
+  margin-left: 0%
+.offset-one
+  margin-left: 8.33333%
+.offset-two
+  margin-left: 16.66667%
+.offset-three
+  margin-left: 25%
+.offset-four
+  margin-left: 33.33333%
+.offset-five
+  margin-left: 41.66667%
+.offset-six
+  margin-left: 50%
+.offset-seven
+  margin-left: 58.33333%
+.offset-eight
+  margin-left: 66.66667%
+.offset-nine
+  margin-left: 75%
+.offset-ten
+  margin-left: 83.33333%
+.offset-eleven
+  margin-left: 91.66667%
+
+
+// colored column ordered
+// ======================
+.order-first-column ,
+.order-last-column  ,
+.order-one-column   ,
+.order-two-columns  ,
+.order-three-columns,
+.order-four-columns ,
+.order-five-columns ,
+.order-six-columns
+  background-color: rgba(132, 0, 140, 1)
+
+.large-column
+  height: 20rem
+
+.auto-row, .auto-column, .auto-columns
+  -webkit-box-flex: 0
+  -webkit-flex: 0 0 auto
+  -ms-flex: 0 0 auto
+  flex: 0 0 auto
+
+
+// DIRECTION
+.flex-row
+  +flex-direction(row)
+.flex-column
+  +flex-direction(column)
+
+
+// REVERSE
+.row-reverse
+  +flex-reverse-direction(row-reverse)
+.column-reverse
+  +flex-reverse-direction(column-reverse)
+
+
+// HORIZONTAL ALIGNMENT
+// ====================
+.align-left
+  -ms-flex-pack: start
+  +alignment-direct(start)
+
+.align-right
+  -ms-flex-pack: end
+  +alignment-direct(end)
+
+.align-center
+  -ms-flex-pack: center
+  +alignment-center(center)
+
+.align-between
+  -ms-flex-pack: justify
+  +alignment-space(between)
+
+.align-around
+  -ms-flex-pack: distribute
+  +alignment-space(around)
+
+// VERTICAL ALIGNMENT
+// ==================
+.top-column
+  -ms-flex-align: start
+  +alignment-direct(start)
+
+.middle-column
+  -ms-align-items: center
+  +alignment-center(center)
+
+.bottom-column
+  -ms-flex-align: end
+  +alignment-direct(end)
+
+
+// ORDER
+// =====
+.order-first-column
+  +flex-order(-1)
+
+.order-natural-column
+  +flex-order(0)
+
+.order-last-column
+  +flex-order(1)
+
+
+// =========================================
+// =========================================
+
+// COLUMNS
+// ==============
+.one
+  +flex-fixed-width(8.333%)
+.two
+  +flex-fixed-width(16.666%)
+.three
+  +flex-fixed-width(25%)
+.four
+  +flex-fixed-width(33.333%)
+.five
+  +flex-fixed-width(41.667%)
+.six
+  +flex-fixed-width(50%)
+.seven
+  +flex-fixed-width(58.333%)
+.eight
+  +flex-fixed-width(66.667%)
+.nine
+  +flex-fixed-width(75%)
+.ten
+  +flex-fixed-width(83.333%)
+.eleven
+  +flex-fixed-width(91.667%)
+.twelve
+  +flex-fixed-width(100%)
+
+
+// SMALL DEVICES
+// ==============
+// small-mobile: 320px /20em
+// @include respond-to( small )
+.small-one
+  +flex-fixed-width(8.333%)
+.small-two
+  +flex-fixed-width(16.666%)
+.small-three
+  +flex-fixed-width(25%)
+.small-four
+  +flex-fixed-width(33.333%)
+.small-five
+  +flex-fixed-width(41.667%)
+.small-six
+  +flex-fixed-width(50%)
+.small-seven
+  +flex-fixed-width(58.333%)
+.small-eight
+  +flex-fixed-width(66.667%)
+.small-nine
+  +flex-fixed-width(75%)
+.small-ten
+  +flex-fixed-width(83.333%)
+.small-eleven
+  +flex-fixed-width(91.667%)
+.small-twelve
+  +flex-fixed-width(100%)
+
+
+// MEDIUM DEVICES
+// ==============
+// tablet: 768px / 48.000em
+@include respond-to( medium )
+  .medium-one
+    +flex-fixed-width(8.333%)
+  .medium-two
+    +flex-fixed-width(16.666%)
+  .medium-three
+    +flex-fixed-width(25%)
+  .medium-four
+    +flex-fixed-width(33.333%)
+  .medium-five
+    +flex-fixed-width(41.667%)
+  .medium-six
+    +flex-fixed-width(50%)
+  .medium-seven
+    +flex-fixed-width(58.333%)
+  .medium-eight
+    +flex-fixed-width(66.667%)
+  .medium-nine
+    +flex-fixed-width(75%)
+  .medium-ten
+    +flex-fixed-width(83.333%)
+  .medium-eleven
+    +flex-fixed-width(91.667%)
+  .medium-twelve
+    +flex-fixed-width(100%)
+
+
+// LARGE DEVICES
+// =============
+// laptop: 1024px / 64.000em
+@include respond-to( large )
+  .large-one
+    +flex-fixed-width(8.333%)
+  .large-two
+    +flex-fixed-width(16.666%)
+  .large-three
+    +flex-fixed-width(25%)
+  .large-four
+    +flex-fixed-width(33.333%)
+  .large-five
+    +flex-fixed-width(41.667%)
+  .large-six
+    +flex-fixed-width(50%)
+  .large-seven
+    +flex-fixed-width(58.333%)
+  .large-eight
+    +flex-fixed-width(66.667%)
+  .large-nine
+    +flex-fixed-width(75%)
+  .large-ten
+    +flex-fixed-width(83.333%)
+  .large-eleven
+    +flex-fixed-width(91.667%)
+  .large-twelve
+    +flex-fixed-width(100%)
+
+
+// WIDE DEVICES
+// ============
+// laptop-large: 1440px / 90.000em
+@include respond-to( wide )
+  .wide-one
+    +flex-fixed-width(8.333%)
+  .wide-two
+    +flex-fixed-width(16.666%)
+  .wide-three
+    +flex-fixed-width(25%)
+  .wide-four
+    +flex-fixed-width(33.333%)
+  .wide-five
+    +flex-fixed-width(41.667%)
+  .wide-six
+    +flex-fixed-width(50%)
+  .wide-seven
+    +flex-fixed-width(58.333%)
+  .wide-eight
+    +flex-fixed-width(66.667%)
+  .wide-nine
+    +flex-fixed-width(75%)
+  .wide-ten
+    +flex-fixed-width(83.333%)
+  .wide-eleven
+    +flex-fixed-width(91.667%)
+  .wide-twelve
+    +flex-fixed-width(100%)
+
+
+// contain one or more wrapper/sections
+.container
+  // small-mobile: 320px /20em
+  @include respond-to(small)
+    .container
+      width: 100%
+
+  // tablet: 768px / 48.000em
+  @include respond-to(medium)
+    .container
+      width: 49rem
+
+  // laptop: 1024px / 64.000em
+  @include respond-to(large)
+    .container
+      width: 65rem
+
+  // laptop-large: 1440px / 90.000em
+  @include respond-to(wide)
+    .container
+      width: 91rem
+

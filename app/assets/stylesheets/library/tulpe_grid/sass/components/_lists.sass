@@ -1,0 +1,30 @@
+// _lists.sass
+
+@charset "UTF-8"
+
+ul
+  +flexbox
+  margin-bottom: 0
+  padding-left: 0
+  list-style: none
+  margin: 0
+
+li
+  position: relative
+  margin: 1rem 0
+  text-align: center
+
+// Remove vertical spacing from nested lists
+li
+  > ul,
+  > ol
+    margin-bottom: 0
+
+ul, ol,
+ul ul,
+ol ol,
+ul ol,
+ol ul
+  margin: 0
+  list-style: none
+  list-style-image: none

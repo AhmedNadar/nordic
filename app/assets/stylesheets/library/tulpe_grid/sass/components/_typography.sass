@@ -1,0 +1,225 @@
+// typography.sass
+
+@charset "UTF-8"
+
+dl dt
+  font-weight: 700
+
+dd
+  margin-left: $base-line
+dl
+  &:before, &:after
+    content: " "
+  display: table
+  &:after
+    clear: both
+  dt
+    float: left
+    width: 25%
+    display: block
+    font-weight: 400
+
+  dd
+    overflow: hidden
+    display: block
+
+
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+hr,
+pre,
+table,
+form,
+figure
+  + h2,
+  + h3,
+  + h4,
+  + h5,
+  + h6
+    margin-top: $base-unit * 8
+
+
+
+
+
+
+// // Subheadings
+// .subheading
+//   margin-top: -($heading-margin-bottom - $base-unit)
+//   margin-bottom: ($base-unit*2)
+//   font-weight: 300
+
+// // Block
+// p, blockquote, hr, pre, ol, ul, dl, table, fieldset, figure, address, form
+//   margin-bottom: $paragraph-margin-bottom
+
+// hr
+//   border-bottom: 1px solid rgba(0, 0, 0, .1)
+//   margin-top: -1px
+
+// blockquote
+//   padding-left: $base-line
+//   border-left: 2px solid rgba(0, 0, 0, .125)
+//   font-style: italic
+//   color: rgba(0, 0, 0, .65)
+
+
+// // Inline
+// .small, time, cite, small, figcaption
+//   font-size: $font-size-smaller
+//   line-height: $base-line-smaller
+
+// cite
+//   color: rgba(0, 0, 0, .5)
+
+// figcaption
+//   font-style: italic
+//   padding-top: $base-unit
+//   padding-bottom: $base-unit
+
+// figure figcaption
+//   position: relative
+//   top: -$base-unit
+
+// abbr[title], dfn[title]
+//   border-bottom: 1px dotted rgba(0, 0, 0, .5)
+//   cursor: help
+
+// var
+//   color: rgba(0, 0, 0, .6)
+//   font-style: normal
+
+// strong, b
+//   line-height: 1
+
+// samp
+//   color: $samp-text-color
+//   background: $samp-background-color
+
+// kbd
+//   border: $kbd-border
+
+// sub,
+// sup
+//   font-size: x-small
+//   line-height: 0
+//   margin-left: $base-unit
+//   position: relative
+
+// sup
+//   top: -4px
+
+// sub
+//   bottom: -2px
+
+
+// // ==========================================================================
+// // Base – Typography
+// // ==========================================================================
+
+
+// // Paragraph
+// p  margin: 0 0 20px 0
+
+// // Links
+// a
+//   color: $base-link-color
+//   text-decoration: underline
+//   background-color: transparent
+//   -webkit-text-decoration-skip: objects
+//   &:active, &:hover
+//     color: $base-link-hover-color
+//     outline-width: 0
+//     text-decoration: none
+
+// // Bold and Strong
+// b, strong, .strong  font-weight: 700
+
+// // Italics
+// em, .em  font-style: italic
+
+// // Abbreviation
+// abbr[title], .abbr[title]
+//   border-bottom: none
+//   text-decoration: underline
+//   text-decoration: underline dotted
+
+
+// // Definition
+// dfn  font-style: italic
+
+// // Small
+// small, .small
+//   @include font-size(13)
+//   @include line-height(16)
+
+
+// // Mark
+// mark, .mark
+//   background-color: #ff0
+//   color: #000
+
+
+// // Sub and Sup
+// sub, .sub, sup, .sup
+//   font-size: 75%
+//   line-height: 0
+//   position: relative
+//   vertical-align: baseline
+
+// sub, .sub  bottom: -0.25em
+// sup, .sup  top: -0.5em
+
+// // Del
+// del, .del  text-decoration: line-through
+
+// // Images
+// figure  margin: 1em 40px
+
+// // Horizontal Rules
+// hr, .hr
+//   -moz-box-sizing: content-box
+//   box-sizing: content-box
+//   height: 1px
+//   background: #eee
+//   border: 0
+//   margin-top: 20px
+//   margin-bottom: 20px
+
+
+
+
+// p
+//   margin: 0 0 2.0rem 0
+
+// em
+//   font-style: italic
+
+// strong
+//   font-weight: bold
+
+// hr
+//   border: solid #ddd
+//   border-width: 1rem 0 0
+//   clear: both
+//   margin: 1rem 0 3rem
+//   height: 0
+
+// // #Links
+// a
+//   color: #333
+//   text-decoration: underline
+//   outline: 0
+
+// a:hover, a:focus
+//   color: #000
+
+
+
+
+
+

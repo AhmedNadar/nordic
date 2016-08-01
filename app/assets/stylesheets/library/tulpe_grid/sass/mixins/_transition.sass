@@ -1,0 +1,36 @@
+// TRANSITIONS
+// =======
+
+// @example sass
+//  .h1
+//    +transition(all 0.75s ease 0s)
+//
+// @example css
+//  .h1
+//    transition:           all 0.75s ease 0s
+//    -webkit-transition:   all 0.75s ease 0s
+//    -moz-transition:      all 0.75s ease 0s
+//    -o-transition:        all 0.75s ease 0s
+//
+
+=transition($ease-transition: all 0.75s ease 0s)
+  transition:           $ease-transition
+  -webkit-transition:   $ease-transition
+  -moz-transition:      $ease-transition
+  -o-transition:        $ease-transition
+
+=transition-cubic($cubic-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1))
+  -webkit-transition:   $cubic-transition
+  -moz-transition:      $cubic-transition
+  -o-transition:        $cubic-transition
+  -ms-transition:       $cubic-transition
+  transition:           $cubic-transition
+
+// transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1)
+//
+//
+
+
+// .transform-50Translate-50Rotate90
+//   transform: translateY(-50%) translateX(-50%) rotate(90deg)
+//

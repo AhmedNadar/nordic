@@ -1,0 +1,32 @@
+// _buttons.sass
+
+@charset "UTF-8"
+
+// ghost-button
+// =============
+// If you want to stay on-trend, you can use this mixin to create the ghost button we built a couple of weeks ago. The &:hover allows us to specify the hover state:
+
+  // Usage:
+  // @include tulpe-button(1em, #ffffff, 400, 0.5em, $highlighted, 2em, 1em 0, 300ms, #000000 )
+
+=tulpe-button($font-color, $font-weight, $border-size, $border-color, $radius, $transition-speed)
+  +inline-flex(inline)
+  +alignment-center(center)
+  text-decoration: none
+  text-transform: uppercase
+  text-rendering: optimizeLegibility
+  background-color: transparent
+  background-image: none
+  color: $font-color
+  font-weight: $font-weight
+  cursor: pointer
+  overflow: hidden
+  vertical-align: middle
+  white-space: nowrap
+  filter: alpha(opacity=80)
+  border: $border-size solid $border-color
+  +border-all-radius($radius)
+  -webkit-transition:   color $transition-speed, background $transition-speed, border-color 700ms
+  transition:           color $transition-speed, background $transition-speed, border-color 700ms
+
+

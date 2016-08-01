@@ -1,0 +1,34 @@
+
+// Breakpoints
+$breakpoints: ("small": (min-width: 20.000em), "medium": (min-width: 48.000em), "large": (min-width: 64.000em), "wide": (min-width: 90.000em))
+
+=respond-to($name)
+  // If the key exists in the map
+  @if map-has-key($breakpoints, $name)
+    // Prints a media query based on the value
+    @media #{inspect(map-get($breakpoints, $name))}
+      @content
+  @else
+    @warn "Unfortunately, no value could be retrieved from `#{$name}`. " + "Please make sure it is defined in `$breakpoints` map."
+
+
+// //small
+// $small-mobile: 320px /20em
+// $medium-mobile: 375px / 23.438em
+// $large-mobile: 425px / 26.563em
+
+// //medium
+// $tablet: 768px / 48.000em
+// $laptop: 1024px / 64.000em
+
+// // large
+// $laptop-large: 1440px / 90.000em
+// // wide
+// $4k: 2560px / 160.000em
+//
+//
+// seed
+// seedling
+// sprout
+// plant
+//
