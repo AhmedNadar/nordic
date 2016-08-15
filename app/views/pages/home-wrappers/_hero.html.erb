@@ -1,17 +1,29 @@
-<article class="wrapper hero">
-  <%= render 'layouts/wrappers/header' %>
-  <div class="content">
-    <section class="flex-container">
-      <div class="flex-column">
-
-        <h1>we provide <span class="helighted">smart</span> solution for <span class="helighted">business</span> &amp; <span class="helighted">people</span></h1>
-
-        <h5>we partner with clients to create human-centric digital experiences that grow with their business</h5>
-
-        <a href="#" class="small-eight six medium-four large-four button hero-button">see our services</a>
-      </div>
-    </section>
-  </div><!-- content -->
-</article>
-<!-- hero -->
-
+<section id="slide-1" class="wrapper hero home-hero homeSlide">
+  <div class="bcg"
+    data-center="background-position: 50% 0px;"
+    data-top-bottom="background-position: 50% -300px;"
+    data-anchor-target="#slide-1" >
+    <%= render 'layouts/wrappers/header' %>
+    <div class="hsContainer">
+      <div class="hsContent content"
+        data-center="opacity: 1"
+        data--60-top="opacity: 0"
+        data-anchor-target="#slide-1 h1" >
+        <section class="flex-container">
+          <div class="flex-column">
+            <h1>we provide
+              <span class="helighted">smart</span> solution for
+              <span class="helighted">business</span> &amp;
+              <span class="helighted">people</span>
+            </h1>
+            <h5>we partner with clients to create human-centric digital experiences that grow with their business</h5>
+              <%= link_to company_path, class:"small-eight six medium-four large-four button hero-button" do %>
+                see our services
+              <% end %>
+          </div>
+        </section>
+      </div><!-- content -->
+    </div>
+  </div>
+</section>
+<!-- hero  company -->

@@ -1,17 +1,26 @@
+@import 'https://fonts.googleapis.com/css?family=Alegreya+Sans:100,300,400,500,700|Cambo|Imprima|Lato:100,300,400,700|Poppins:300,400,500,600|Ruluko|Snippet|Titillium+Web:200,300,400,600';
+
+
 .hero {
-  padding: 0 0 2.5rem 0;  /* padding-bottom: 40px; */
-  background-image: asset-url('hero_bg.png');
-  height: 100vh;
-  background-size: cover;
-  // background-position: center;
+  padding: 0;
   margin: 0;
+  height: 100vh;
   width: 100%;
+  background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
   z-index: 2;
-  // position: absolute;
-  // display: block;
+}
 
+.home-hero {
+  /*background-image: asset-url('hero_bg.png');*/
+}
+.company-hero {
+  background-image: asset-url('company_bg.png');
+}
+
+.contacts-hero {
+  background-image: asset-url('contact_bg.png');
 }
 
 
@@ -33,6 +42,7 @@
     -ms-flex-align: baseline;
     align-items: baseline;
     text-align: center;
+    // margin-bottom: 3rem;
   }
   a {
     position: relative;
@@ -68,44 +78,43 @@
   .brand a:hover, .brand a:before {
   background-color: transparent;
 }
-  .navbar a {
-    padding-bottom: 1rem;
-    /*text-transform: uppercase;*/
-    font-size: 1.3rem;
-    line-height: 100%;
-    font-weight: 600;
-    letter-spacing: 0rem;
-    -webkit-transition: all 0.75s ease 0s;
-    -moz-transition: all 0.75s ease 0s;
-    -o-transition: all 0.75s ease 0s;
-    transition: all 0.75s ease 0s;
+  .navbar {
+    margin-top: 2rem;
+    a {
+      padding-bottom: 1rem;
+      /*text-transform: uppercase;*/
+      font-size: 2rem;
+      line-height: 100%;
+      font-weight: 600;
+      letter-spacing: 0rem;
+      -webkit-transition: all 0.75s ease 0s;
+      -moz-transition: all 0.75s ease 0s;
+      -o-transition: all 0.75s ease 0s;
+      transition: all 0.75s ease 0s;
+    }
   }
-
-.navbar span {}
 
 
 /* hero content
 =======================*/
 .hero .content {
-  width: 100%;
   bottom: 0;
-  top: 30%;
-  color: #ffffff;
-  text-align: center;
-  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 0px 5px 5px rgba(0, 0, 0, 0.68);
   vertical-align: center;
-  line-height: 1.7;
   width: 100%;
   position: relative;
-  -webkit-transform: translateY(-30%);
-  -ms-transform: translateY(-30%);
-   transform: translateY(-30%);
+  -webkit-transform: translateY(0%);
+  -ms-transform: translateY(0%);
+  transform: translateY(0%);
 }
+
 .hero .content h1, .hero .content h5 {
-  text-align: center; width: 100%;letter-spacing: 0rem;
+  text-align: center;
+  width: 100%;
+  letter-spacing: 0rem;
 }
 .hero .content h1 {
-  text-transform: uppercase;
+  text-transform: capitalize;
   font-weight: 600;
   font-size: 3rem;
   line-height: 4rem;
@@ -158,18 +167,17 @@
     opacity: 1;
     height: 1000% !important;
   }
-   .navbar a {
-    font-size: 1.8rem;
-    letter-spacing: 0.1rem;
-  }
   .hero .content h1 {
-    font-size: 3.5rem;
+    font-size: 4rem;
+    font-weight: 100;
+    line-height: 5rem;
   }
   .hero .content h5 {
     font-size: 2rem;
   }
   .hero-button {
     font-size: 1.7rem;
+    margin-top: 4rem;
   }
 }
 /* Medium devices (tablets, 48em / 768px and up)*/
@@ -196,15 +204,18 @@
   }
   .hero .content h5 {
     font-weight: 400;
-    font-size: 2rem;
+    font-size: 3rem;
     font-style: italic;
     line-height: 4rem;
     width: 100%;
   }
   .hero .content h1 {
-    font-weight: 700;
-    font-size: 6rem;
+    // font-weight: 700;
+    // font-size: 8rem;
+    // line-height: 8rem;
+    font-size: 7rem;
     line-height: 8rem;
+    font-weight: 100;
   }
   .hero-button {
     font-size: 2rem;
@@ -217,9 +228,6 @@
     padding: 3rem 0 1rem 0;
     margin: 0 auto;
   }
-  .hero .content {
-    top: 50%;
-  }
   .hero-button {
     font-size: 2.7rem;
   }
@@ -231,9 +239,17 @@
     margin: 0 auto;
   }
 }
+.section {
+    padding: 50px 0;
+    position: relative;
+    background-color: #FFFFFF;
+}
+
+
 /*
 clients
  /////////////////////////*/
+
 .clients {
   margin-bottom: 3em;
   background-color:#F0F0F0;
@@ -241,46 +257,48 @@ clients
   margin-left: 0;
   margin-right: 0;
   width: 100%;
-}
-
-
-.clients .flex-column {
-  margin: 1rem 0;
-  padding: 1rem;
+  .flex-column {
+    margin: 1rem 0;
+    padding: 1rem;
+  }
+  a {
+    display: flex;
+    justify-content: center;
+    border-left: solid 0 transparent;
+    &:hover, &:before{
+      background: none;
+    }
+  }
+  .brand {
+    text-align: center;
+    transition: .3s linear;
+    margin-bottom: 0;
+    &:hover {
+      transform: scale(1.1);
+      transition: .3s linear;
+      // box-shadow: 0 0.5rem 0.5rem #BABABA;
+    }
+  }
+  img {
+    margin: 1rem 0;
+  }
 }
 @media (min-width: 75em) {
-  .clients .flex-column {
-    margin: 0;
-    padding: inherit;
+  .clients {
+    .flex-column {
+      margin: 0;
+      padding: inherit;
+    }
   }
 }
 
-.clients .brand {
-  text-align: center;
-  transition: .3s linear;
-}
-.clients .brand:hover {
-  transform: scale(1.1);
-  transition: .3s linear;
-  box-shadow: 0 0.5rem 0.5rem #BABABA;
-}
-
-.clients a {
-  display: flex;
-  justify-content: center;
-  border-left: solid 0 transparent;
-}
-.clients a:hover, .clients a:before {
-  background: none;
-}
-
-/*
-services
- /////////////////////////*/
+/* services
+/////////////////////////*/
 .services, .team, .timeline, .clients {
   text-align: center;
   color: #5D7992;
 }
+
 .services section, .team section, .timeline section, .clients section  {
   margin-bottom: 5rem;
 }
@@ -294,12 +312,27 @@ services
  {
   text-transform: capitalize;
 }
-.services h1, .team h1, .intro h1, .timeline h1, .clients h1  {
-  color:rgb(255, 54, 93);
-  font-weight: 600;
-  font-size: 3rem;
+.services h1 {
+  margin-top: 2rem;
 }
-.services h1:after, .team h1:after, .timeline h1:after, .clients h1:after  {
+.intro h1 {
+  color:rgb(255, 54, 93);
+}
+.services h1, .team h1, .timeline h1, .clients h1, .action h2  {
+  font-family: 'Cambo';
+  // color:rgb(255, 54, 93);
+  color: #2D4059;
+  font-weight: 600;
+  font-size: 4rem;
+}
+.action h2 {
+  color: #fff;
+}
+
+.services h1:after,
+.team h1:after,
+.timeline h1:after,
+.clients h1:after  {
   display: flex;
   width: 30%;
   content: " ";
@@ -308,7 +341,7 @@ services
 }
 .service h2, .team h2, .timeline h2, .clients h2 {
   color: #2D405B;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-weight: 600;
   margin-bottom: 1rem;
   letter-spacing: 0;
@@ -323,7 +356,7 @@ services
   margin: 0 0 2rem 0;
 }
 .services p, .team p, .timeline p, .clients p  {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   font-weight: 400;
   margin-bottom: 5rem;
 }
@@ -333,7 +366,7 @@ services
   .services h1, .team h1, .timeline h1 {
     font-size: 4rem; }
   .services p, .team p, .timeline p {
-    font-size: 2.2rem;
+    // font-size: 2.2rem;
   }
 }
 
@@ -384,9 +417,9 @@ action
   }
 
   .action p{
-    font-size: 1.5rem;
+    font-size: 3rem;
+    line-height: 4rem;
     font-weight: 400;
-    line-height: 1.8rem;
   }
   .action .button {
     background-color: rgb(255, 54, 93);
@@ -394,7 +427,7 @@ action
     color: #ffffff;
     border-radius: 0.7rem;
     text-transform: uppercase;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     display: inline-flex;
   }
@@ -408,9 +441,11 @@ action
       /*height: 100%;*/
     }
     .action p {
-      font-size: 2rem;
-      line-height: 3rem;
-      /*margin-bottom: 1rem;*/
+      font-size: 3rem;
+      line-height: 4rem;
+      // font-size: 2rem;
+      // line-height: 3rem;
+      margin-bottom: 2rem;
     }
     .action .button {
       font-size: 1.5rem;
@@ -564,6 +599,23 @@ action
   filter: grayscale(100%);
   filter: gray;
 }
+.card {
+  figcaption {
+    padding: 0 1rem;
+  }
+}
+
+
+@media (max-width: 48em) {
+  .team{
+    h2, h4 {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
+  }
+}
 
 /* footer
 =============================================
@@ -603,13 +655,19 @@ action
     background-position: center center;
     background-repeat: no-repeat;
   }
-  .footer .top {
-    padding: 5rem 1rem 0 1rem;
-    z-index: 2;
-    margin: 0 auto;
-  }
-  .footer .flex-column {
-    padding: 0;
+  .footer {
+    .top {
+      padding: 5rem 1rem 0 1rem;
+      z-index: 2;
+      margin: 0 auto;
+    }
+    .flex-column {
+      padding: 0;
+    }
+    a {
+      font-size: 1.5rem;
+      text-transform: capitalize;
+    }
   }
 
 /*  .footer .content {
@@ -710,7 +768,7 @@ action
 }
 .toronto p {
   margin: 2rem 0;
-  font-size: 1.1rem;
+  font-size: 1.5rem;
 }
 .toronto p, .toronto a {
   color: rgba(255, 255, 255, 0.57);
@@ -738,9 +796,10 @@ action
       font-size: 1.6rem;
     }
 
-    .footer .top a {
-      font-size: 1.5rem;
-    }
+    // .footer .top a {
+    //   font-size: 1.5rem;
+    //   text-transform: capitalize;
+    // }
   }
 
 @media (min-width: 75em) {
@@ -758,13 +817,11 @@ action
 
 /*~~~~~~~~~~~~~~~~~~~ Company ~~~~~~~~~~~~~~~~~~~*/
 
-.company  {
-  background-image: asset-url('company_bg.png');
-}
+
 
 .company .content h1 {
-  font-weight: 700;
-  /* font-size: 4rem; */
+  font-weight: 100;
+  font-size: 4rem;
   text-transform: capitalize;
   line-height: 5rem;
 }
@@ -783,16 +840,16 @@ action
   background: asset-url('company_details_bg.png') no-repeat center center;
 }
 
-.intro  h1{
+.intro h1{
   font-size: 3rem;
   font-weight: 800;
-  font-style: italic;
 }
 .intro p {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 400;
   margin-bottom: 3rem;
   text-align: center;
+  letter-spacing: 0.1rem;
   color: #2D405B;
 }
 .intro p:nth-child(2){
@@ -826,8 +883,25 @@ action
 }
 
 
-#company .services .header h1, #company .timeline h1 {
+#company {
+  .action h2 {
     margin-bottom: 1rem;
+  }
+  .header, .timeline {
+    h1 {
+      margin-bottom: 1rem;
+      font-family: 'Cambo';
+    }
+  }
+  .timeline {
+    h1, p {
+      color: #ffffff;
+    }
+    p {
+      font-size: 2.3rem;
+    }
+  }
+
 }
 
 .service .fs .fa-border,
@@ -842,19 +916,14 @@ action
 .service .ss .fa-border { padding: 0.3em 0.27em 0.5em }
 .service .ts .fa-border { padding: 0.5em 0.34em 0.30em }
 
-#company .action h2 {
-  font-size: 3rem;
-  margin-bottom: 0;
-}
+
 #company .action figcaption {
   margin-bottom: 2rem;
 }
 
 #company .timeline {
   width: 100%;
-  // background-image:url('<%= asset_path("timeline_bg.png") %> ');
-  background: asset-url('timeline_bg.png') no-repeat center center;
-  z-index: 1;
+  // background: asset-url('timeline_bg.png') no-repeat center center;
 }
 #company .timeline section:nth-child(2):before {
   top: 50%;
@@ -873,7 +942,7 @@ action
 #company .timeline .epoch:before {
   content: '';
   background: #2D4059;
-  z-index: -1;
+  z-index: 0;
   position: absolute;
   left: 12%;
   height: 150%;
@@ -903,8 +972,8 @@ action
     left: -1.6rem;
     top: 1.5rem;
     background-color: rgb(255, 54, 93);
-    z-index: -1;
-    border-radius: 0.4rem;
+    z-index: 0;
+    border-radius: 2rem;
   }
 
 
@@ -927,8 +996,9 @@ action
   }*/
 #company .timeline .epoch .details .title p {
   color: rgb(208, 216, 224);
-  font-size: 1.5rem;
-  font-weight: 400;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: 0.11rem;
 }
 
   .timeline .epoch .pic{
@@ -965,8 +1035,9 @@ action
 
 @media (min-width: 48em) {
   .company .content h1 {
-    line-height: 7rem;
-    font-weight: 400;
+    font-size: 7rem;
+    line-height: 8rem;
+    font-weight: 100;
   }
   .intro .header {
     background-size: 50%;
@@ -986,7 +1057,7 @@ action
     padding-left: 1rem;
   }
     #company .action p {
-    font-size: 2rem;
+    font-size: 3rem;
     line-height: 4rem;
     margin-bottom: 1rem;
   }
@@ -1004,7 +1075,7 @@ action
   #company .timeline .epoch:before {
       content: '';
       background: #2D4059;
-      z-index: -1;
+      z-index: 0;
       position: absolute;
       left: 49.6%;
       height: 150%;
@@ -1040,8 +1111,8 @@ action
       /*left: 28.6rem;*/
       top: 1.5rem;
       background-color: rgb(255, 54, 93);
-      z-index: -1;
-      border-radius: 0.4rem;
+      z-index: 0;
+      border-radius: 2rem;
   }
   #company .timeline .epoch .details.even:after {
         left: -1.6rem;
@@ -1054,18 +1125,20 @@ action
       padding-top: 1rem;
   }
   .timeline .title h4 {
-    font-size: 3rem;
+    font-size: 3.7rem;
     font-weight: 700;
     margin-bottom: 1rem;
   }
   #company .timeline .epoch .title p {
-    color:rgb(255, 54, 93);
-    font-size: 1.6rem;
+    color:#FFD460;
+    font-size: 1.7rem;
     font-weight: 600;
   }
 }
 
-
+.timeline {
+  color: #ffffff;
+}
 
 
 @media (min-width: 62em){
@@ -1165,9 +1238,6 @@ clients
 /*
 contacts
 */
-.contact  {
-  background-image: asset-url('contact_bg.png');
-}
 
 #contact .services .brand img {
     margin-bottom: 1rem;
@@ -1175,30 +1245,100 @@ contacts
     height: 100%;
 }
 
-#contact .map-info{
-  margin: 0 6rem;
-  margin-top: -10rem;
-  border-radius: 0.5rem;
-  padding: 2rem;
-  background-color: #F2F2F2;
+#contact {
+  .map-info {
+    margin: 0 4rem;
+    margin-top: -7rem;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    background-color: #F2F2F2;
+    position: relative;
+    box-shadow: 0 0.5rem 0.5rem #BABABA;
+    opacity: 0.8;
+    h2, address {
+      color: #2D405B;
+    }
+    a {
+      color:rgb(255, 54, 93);
+    }
+    address {
+      display: block;
+      font-style: normal;
+      font-size: 2rem;
+      margin-top: 3rem;
+    }
+    h2 {
+      font-size: 2.5rem;
+      font-weight: 100;
+    }
+  }
+}
+
+
+@media (min-width: 48em) {
+  #contact {
+    .map-info {
+      margin-top: -8rem;
+      h2 {
+        font-size: 5rem;
+        font-weight: 400;
+      }
+      address {
+        font-size: 2.5rem;
+      }
+    }
+  }
+}
+
+// separator
+// ----------
+
+.separator {
+  color: #ff365d;
+  margin: 0 auto 20px;
+  max-width: 35%;
+  text-align: center;
   position: relative;
-  box-shadow: 0 0.5rem 0.5rem #BABABA;
-  opacity: 0.8;
+  display: flex;
+  flex-direction: column;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin-bottom: 40px;
+  font-size: 1.5rem;
 }
-#contact .map-info h2,
-#contact .map-info address {
-  color: #2D405B;
+.separator:before, .separator:after {
+    display: block;
+    width: 40%;
+    content: " ";
+    margin-top: 10px;
+    height: 1px;
+    border: 1px solid #c5a47e;
+    border-color: #ff365d;
 }
-#contact .map-info a {
-  color:rgb(255, 54, 93);
+.separator:before {
+    float: left;
 }
-#contact .map-info address {
+.filter .separator {
+  color: #FFFFFF;
+}
+.separator .fa {
+    margin-top: 0.4rem;
+}
+.filter .separator:before, .filter .separator:after {
+  border-color: #FFFFFF;
+}
+
+*:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.title-area {
+  max-width: 680px;
+  margin: 0 auto 70px;
   display: block;
-  font-style: normal;
-  font-size: 2.3rem;
-  margin-top: 3rem;
+  padding: 0 15px;
+  text-align: center;
 }
-#contact .map-info h2 {
-  font-size: 5rem;
-  font-weight: 400;
-}
+

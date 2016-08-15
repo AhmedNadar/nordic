@@ -1,16 +1,33 @@
-<article class="wrapper action">
-  <section class="flex-container align-center">
-    <div class="flex-column twelve">
-      <figure>
-        <img src="<%= asset_path('final_words.png') %>">
-        <figcaption>
-          <p>We are interested to listen and discuss your business opportunities and challenges</p>
-            <%= link_to contact_path, class:"small-eight six medium-four large-four button" do %>
-              contact us
-            <% end %>
-        </figcaption>
-      </figure>
+
+  <section id="slide-3" class="wrapper action homeSlide" style="height: 600px;">
+    <div class="bcg"
+      data-bottom-top="background-position: 0px 100px;"
+      data-top-bottom="background-position: 0px -500px;"
+      data-top-bottom="background-position: -40px 50%;"
+      data-anchor-target="#slide-3"
+    >
+      <div class="hsContainer">
+        <div class="hsContent">
+          <div class="plaxEl"
+            data-100-bottom="opacity: 0"
+            data-bottom="opacity: 1;"
+            data-anchor-target="#slide-3"
+          >
+            <section class="flex-container align-center">
+              <div class="flex-column twelve title-area filter">
+                <h2>What we do</h2>
+                <div class="separator">
+                  <i class="fa fa-sort fa-rotate-90" aria-hidden="true"></i>
+                </div>
+                <p>We are interested to listen and discuss your business opportunities and challenges</p>
+                <%= link_to contact_path, class:"small-eight six medium-four large-four button" do %>
+                  contact us
+                <% end %>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
-</article>
-<!-- call for action -->
+  <!-- action -->
