@@ -10,8 +10,11 @@
 // Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require modernizr-2.7.1.min.js
 //= require jquery
 //= require jquery_ujs
+//= require imagesloaded.js
+//= require enquire.min.js
 //= require skrollr.js
 //= require pages.js
 //= require_tree.

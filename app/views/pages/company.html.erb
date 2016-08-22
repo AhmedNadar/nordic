@@ -1,4 +1,5 @@
 <div id="company">
+
   <%#= render 'pages/company-wrappers/hero' %>
   <section id="slide-1" class="wrapper hero company homeSlide">
     <div class="bcg"
@@ -29,8 +30,6 @@
 
   <section id="slide-2" class="wrapper intro">
     <div class="bcg"
-      data-0="background-color:rgb(225,225,225);"
-      data-top="background-color:(225,225,225);"
       data-anchor-target="#slide-2" >
         <div class="hsContainer">
           <div class="hsContent">
@@ -56,19 +55,25 @@
 
   <!--   <div class="divider"></div> -->
 
-  <section id="slide-3" class="wrapper action homeSlide" style="height: 600px;">
+  <section id="slide-3" class="wrapper action homeSlide">
     <div class="bcg"
-      data-bottom-top="background-position: 0px 100px;"
-      data-top-bottom="background-position: 0px -500px;"
-      data-top-bottom="background-position: -40px 50%;"
+
+          data-center="background-position: 50% 0px;"
+          data-top-bottom="background-position: 50% -200px;"
+          data-bottom-top="background-position: 50% 200px;"
+
       data-anchor-target="#slide-3"
     >
       <div class="hsContainer">
         <div class="hsContent">
           <div class="plaxEl"
-            data-100-bottom="opacity: 0"
-            data-bottom="opacity: 1;"
-            data-anchor-target="#slide-3"
+
+              data--50-bottom="opacity: 0;"
+              data--100-bottom="opacity: 1;"
+              data-center="opacity: 1"
+              data-200-top="opacity: 0"
+
+            data-anchor-target="#slide-3 h2"
           >
             <section class="flex-container align-center">
               <div class="flex-column twelve title-area filter">
@@ -85,6 +90,7 @@
     </div>
   </section>
   <!-- action -->
+
 
   <article class="section wrapper services">
     <section class="flex-container align-center header title-area">
@@ -140,13 +146,16 @@
   </article>
   <!-- services -->
 
-  <section id="slide-4" class="homeSlide timeline homeSlideTall" style="height: 180rem;">
+
+
+
+  <section id="slide-4" class="timeline homeSlideTall" style="height: 180rem;">
   <div class="bcg"
 
       data-bottom-top="background-position: 50% 0px;"
       data-top-bottom="background-position: 50% -200px;"
       data-anchor-target="#slide-4"
-  >
+      >
       <div class="curtainContainer">
           <div class="curtain"
               data-bottom-top="opacity: 0"
@@ -157,7 +166,6 @@
           <div class="copy"
               data-bottom-top="opacity: 0"
               data-80-top="opacity: 1;"
-
               data-anchor-target="#slide-4 .copy"
           >
         <section class="flex-container">
