@@ -1,12 +1,14 @@
 <!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" itemscope itemtype="http://schema.org/WebPage"> <![endif]-->
+<!--[if IE 9]>         <html class="no-js ie9" itemscope itemtype="http://schema.org/WebPage"><![endif]-->
+<!--[if !IE]> -->
 <html>
-<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
-<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
-<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <head>
   <title>Nordic</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes">
   <%= csrf_meta_tags %>
   <link rel="icon" type="image/png" href="<%= asset_path('nordic_icon.png') %>">
 </head>
