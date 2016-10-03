@@ -1,32 +1,34 @@
-<header class="header">
-  <section class="flex-container align-justify">
-    <div class="flex-column twelve medium-four large-four">
-      <figure class="brand">
-        <%= link_to root_path, class:"navbar-brand" do %>
-          <img src="<%= asset_path('Logo_nordic.png') %>" alt="Nordic" width="auto" height="auto">
-        <% end %>
-      </figure>
-    </div>
-    <div class="flex-column twelve medium-eight large-eight">
-      <nav class="navbar navbar-right">
-        <ul class="align-right">
-          <li class="flex-column four large-three">
-            <%= link_to root_path do %>
-              <span>Home</span>
-            <% end %>
-          </li>
-          <li class="flex-column four large-three">
-            <%= link_to company_path do %>
-              <span>Company</span>
-            <% end %>
-          </li>
-          <li class="flex-column four large-three">
-            <%= link_to contact_path do %>
-              <span>Contact</span>
-            <% end %>
-          </li>
-        </ul>
-      </nav>
-    </div>
-  </section>
-</header>
+<div class="container-fluid">
+  <menu class="menu menu-wrapper">
+    <section class="wrapper align-justify">
+      <div class="column small-twelve medium-four large-four">
+        <figure class="brand">
+          <%= link_to root_path, class:"navbar-brand" do %>
+            <img src="<%= asset_path('Logo_nordic.png') %>" alt="Nordic" width="auto" height="auto">
+          <% end %>
+        </figure>
+      </div>
+      <div class="column small-twelve medium-eight offset-two large-six">
+        <nav class="navbar">
+          <ul>
+            <li class="column four large-two">
+              <%= link_to root_path do %>
+                <span>Home</span>
+              <% end %>
+            </li>
+            <li class="column four large-two">
+              <%= link_to company_path do %>
+                <span>Company</span>
+              <% end %>
+            </li>
+            <li class="column four large-two">
+              <%= link_to contact_path do %>
+                <span>Contact</span>
+              <% end %>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </section>
+  </menu>
+</div>
