@@ -47,3 +47,25 @@ h6, .h6
   line-height: $h6-line-height
   letter-spacing: 0
   margin: .67em 0
+
+=header-1
+  color: $dark-headlines
+  font-weight: 600
+  font-size: 2em
+  letter-spacing: 0.075em
+  text-transform: uppercase
+  margin-bottom: 1em
+  &:after
+    +flexbox
+    width: 30%
+    content: " "
+    border: 1px solid $main-red
+    margin: 2rem auto 0 auto
+    margin-top: 0.5em
+=header-2
+  font-size: 0.258em
+  line-height: 1em
+  letter-spacing: 0em
+  font-weight: 100
+  color: $dark-blue
+  text-transform: capitalize

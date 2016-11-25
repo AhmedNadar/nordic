@@ -1,0 +1,375 @@
+// _footer.sass
+
+@charset "UTF-8"
+
+.footer
+  color: $white
+  height: $max-width
+  overflow: hidden
+  margin-bottom: 0
+  padding: 0
+  // color: $white
+  -webkit-transition-duration: .5s
+  -moz-transition-duration: .5s
+  -o-transition-duration: .5s
+  transition-duration: .5s
+
+  .wrapper
+    position: relative
+    width: $max-width
+    height: $max-hight
+    top: 0
+
+  .map
+    width: $max-width
+    height: $max-hight
+    position: absolute
+    background-color: #323232
+    padding: 0
+    z-index: 1
+    background-size: cover
+    background-position: center center
+    background-repeat: no-repeat
+
+  .top
+    padding: 4rem 1rem 0 1rem
+    z-index: 2
+    margin: 0 auto
+
+    .column
+      padding: 0
+
+    .brand
+      span
+        color: #FFD543
+        font-size: 1.5em
+        letter-spacing: 0.05em
+        width: $max-width
+      a
+        +gray-filter(100%)
+      p
+        color: $white
+        font-size: 0.8rem
+        width: $max-width
+    h6
+      text-transform: capitalize
+      font-size: 1.3rem
+      font-weight: 100
+      color: $white
+      margin-top: 0
+      &:after
+        display: flex
+        width: 20%
+        content: " "
+        border: 1px solid #ffffff
+        margin-top: 0.3rem
+
+  .content
+    position: relative
+    padding: 5rem 1rem 0 1rem
+    color: #ffffff
+    text-align: center
+    text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2)
+    top: 5%
+    bottom: 10%
+    width: $max-width
+    z-index: 2
+    .wrapper
+      position: relative
+      margin-bottom: 2rem
+      padding: 0
+
+
+.footer p
+  font-size: 1.4rem
+  letter-spacing: 0rem
+
+
+/*.footer .content a, */
+.footer .city
+  text-transform: capitalize
+  padding: 0 0 0.5rem 0
+  color: #ffffff
+  font-size: 1.3rem
+  font-weight: 400
+  color: rgb(255, 218, 108)
+
+.fa-2x
+  font-size: 2em
+
+
+.footer span
+  color: rgb(255, 54, 93)
+  font-size: 1.2rem
+
+.footer .tel, .footer .mail
+  color: rgb(255, 54, 93)
+
+.footer .top .social a:before
+  background: none
+
+
+
+.footer .bottom
+  text-align: center
+
+.footer .bottom .flex-column
+  margin-bottom: 0
+
+// .footer address
+//   color: $white
+  // font-size: 1.3rem
+  // font-style: normal
+  // display: none
+
+.toronto
+  background-color: rgba(29, 29, 29, 0.54)
+  margin: 0
+  z-index: 3
+
+.toronto p
+  margin: 2rem 0
+  font-size: 1.1rem
+
+.toronto p, .toronto a
+  color: rgba(255, 255, 255, 0.57)
+
+.toronto a
+  text-decoration: underline
+
+.toronto i
+  color: rgb(255, 54, 93)
+
+
++respond-to(medium)
+  .footer .brand
+    text-align: center
+
+  .footer h6
+    font-size: 1.7rem
+    margin-bottom: 2rem
+
+  .footer h6:after
+    width: 15%
+
+  /*.footer .content a, */
+  .footer .city
+    font-size: 1.3rem
+
+  // .footer .top a
+  //   font-size: 1.2rem
+
++respond-to(large)
+
+  .footer .top .flex-container
+    text-align: left
+
+
+  .footer address
+    display: block
+
+
+
+
+
+
+
+
+//   .footer {
+//     width: 100%;
+//     height: 100%; /*100vh*/
+//     overflow: hidden;
+//     position: relative;
+//     margin-bottom: 0;
+//     padding: 0;
+//     color: #ffffff;
+//     -webkit-transition-duration: .5s;
+//     -moz-transition-duration: .5s;
+//     -o-transition-duration: .5s;
+//     transition-duration: .5s;
+//   }
+//   .footer .flex-container {
+//     z-index: 3;
+//     padding: 0;
+//     /*position: absolute;*/
+//     position: relative;
+//     width: 100%;
+//     height: 100%;
+//     top: 0;
+//   }
+//   .footer .map {
+//     width: 100%;
+//     height: 100%;
+//     /*height: 100vh;*/
+//     position: absolute;
+//     /*position: relative;*/
+//     background-color: #323232;
+//     padding: 0;
+//     z-index: 1;
+//     background-size: cover;
+//     background-position: center center;
+//     background-repeat: no-repeat;
+//   }
+//   .footer {
+//     .top {
+//       padding: 5rem 1rem 0 1rem;
+//       z-index: 2;
+//       margin: 0 auto;
+//     }
+//     .flex-column {
+//       padding: 0;
+//     }
+//     a {
+//       font-size: 1.5rem;
+//       text-transform: capitalize;
+//     }
+//   }
+
+// /*  .footer .content {
+//     position: relative;
+//     padding: 5rem 1rem 0 1rem;
+//     color: #ffffff;
+//     text-align: center;
+//     text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.2);
+//     /*top: 5%;*/
+//     /*bottom: 10%;*/
+//     /*width: 100%;
+//     z-index: 2;
+//   }*/
+//   .footer .brand a {
+//     -webkit-filter: grayscale(100%);
+//     -moz-filter: grayscale(100%);
+//     -ms-filter: grayscale(100%);
+//     -o-filter: grayscale(100%);
+//     filter: grayscale(100%);
+//     filter: gray;
+//   }
+
+// .footer .brand span {
+//   color: #FFD543;
+//   font-size: 2rem;
+//   letter-spacing: 0.2rem;
+//   width: 100%;
+// }
+// .footer p {
+//   font-size: 1.4rem;
+//   letter-spacing: 0rem;
+// }
+// .footer .brand p {
+//   font-size: 1.1rem;
+//   width: 100%;
+//   margin: 1rem 0;
+// }
+// .footer h6 {
+//   text-transform: capitalize;
+//   font-size: 1.5rem;
+//   font-weight: 400;
+//   margin-bottom: 1rem;
+// }
+// .footer h6:after{
+//   display: flex;
+//   width: 20%;
+//   content: " ";
+//   border: 1px solid #ffffff;
+//   margin-top: 0.3rem;
+// }
+// .footer .content .flex-container {
+//   position: relative;
+//   margin-bottom: 2rem;
+//   padding: 0;
+// }
+// /*.footer .content a, */
+// .footer .city {
+//   text-transform: capitalize;
+//   padding: 0 0 0.5rem 0;
+//   color: #ffffff;
+//   font-size: 1.3rem;
+//   font-weight: 400;
+// }
+// .footer .city  {
+//   color: rgb(255, 218, 108);
+// }
+// .fa-2x {
+//   font-size: 2em;
+// }
+
+// .footer span {
+//   color: rgb(255, 54, 93);
+//   font-size: 1.2rem;
+// }
+//  .footer .tel, .footer .mail {
+//   color: rgb(255, 54, 93);
+//  }
+// .footer .top .social a:before {
+//   background: none;
+// }
+
+
+//  .footer .bottom {
+//     text-align: center;
+//   }
+//   .footer .bottom .flex-column{
+//     margin-bottom: 0;
+//   }
+// .footer address {
+//   font-size: 1.3rem;
+//   font-style: normal;
+//   display: none;
+// }
+// .toronto {
+//   background-color: rgba(29, 29, 29, 0.54);
+//   margin: 0;
+//   z-index: 3;
+// }
+// .toronto p {
+//   margin: 2rem 0;
+//   font-size: 1.5rem;
+// }
+// .toronto p, .toronto a {
+//   color: rgba(255, 255, 255, 0.57);
+// }
+// .toronto a {
+//   text-decoration: underline;
+// }
+// .toronto i {
+//   color: rgb(255, 54, 93);
+// }
+
+//   @media only screen
+//   and (min-device-width: 768px)
+//   and (max-device-width: 1024px)
+//   and (-webkit-min-device-pixel-ratio: 1){
+//     .footer .brand {
+//       text-align: center;
+//     }
+//     .footer h6 {
+//       font-size: 2rem;
+//       margin-bottom: 2rem;
+//     }
+//     .footer h6:after {
+//       width: 15%;
+//     }
+//     /*.footer .content a, */
+//     .footer .city {
+//       font-size: 1.6rem;
+//     }
+
+//     // .footer .top a {
+//     //   font-size: 1.5rem;
+//     //   text-transform: capitalize;
+//     // }
+//   }
+
+// // @media (min-width: 75em) {
+// //   .footer .top .flex-container {
+// //     text-align: left;
+// //     min-width: 100%;
+// //   }
+// //   .footer .top {
+// //     width: 1170px;
+// //   }
+
+// //   .footer address {
+// //     display: block;
+// //   }
+// // }

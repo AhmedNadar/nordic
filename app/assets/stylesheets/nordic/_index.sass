@@ -16,6 +16,12 @@ html, body
 @import "brand"
 @import "menu"
 @import "clients"
+@import "services"
+@import "action"
+@import "team"
+@import "footer"
+
+@import "company"
 
 // @import "parallax"
 
@@ -32,36 +38,58 @@ html, body
   -moz-transition: opacity 300ms ease-out
   transition: opacity 300ms ease-out
 
+html
+  h1
+    font-family: 'Cambo'
 
 article
   text-align: center
   color: #5D7992
 
+.divider-line
+  border-image: asset-url('hr_line.png') 0 30 10 20 stretch repeat
+  border-width: 1px
+  background-repeat: no-repeat
+  background-position: center
+  overflow: hidden
+  +top-margin(2em)
+  +bottom-margin(2em)
 
-.services
-  h1
-    color: $midnight-blue
-    font-weight: 300
-    font-size: 2.2rem
-    letter-spacing: 0.111rem
-    margin: 0
-    &:after
-      +flexbox
-      width: 40%
-      content: " "
-      border: 1px solid $main-red
-      margin: 2rem auto 0 auto
-      margin-top: 0.5em
-  p
-    font-size: 1.1rem
-    font-weight: 400
-    margin-bottom: 5rem
-    padding: 0 0.5em
-    line-height: 1.3em
+.separator
+  margin-bottom: 0.5em
+  color: $white
+  width: 100%
+  max-width: 30%
+  text-align: center
+  position: relative
+  display: -webkit-box
+  display: -ms-flexbox
+  display: -webkit-box
+  display: flex
+  -webkit-box-orient: vertical
+  flex-flow: row nowrap
+  -webkit-box-pack: justify
+  -ms-flex-pack: justify
+  justify-content: space-between
+  font-size: 1.5rem
+  &:before,
+  &:after
+    width: 40%
+    content: " "
+    height: 1px
+    border: 1px solid $white
+    top: 0
+  .fa
+    font-size: 0.6em
+    margin-top: -0.5em
 
-// ================
+
+
+
+
+// ================================================
 // MEDIA QUERIES
-// ================
+// ================================================
 
 // SMALL
 //======
@@ -78,12 +106,10 @@ article
   .navbar a
     font-size: 1.6rem
     font-weight: 400
-    letter-spacing: 0.1rem
+    letter-spacing: 0.1em
 
   .menu-wrapper
     margin-top: 5em
-    // .offset-two
-    //   margin-left: 0
     ul
       li
         text-align: right
@@ -113,6 +139,23 @@ article
     padding-right: 5em
     margin-top: 7em
 
+  .action
+    h1
+      font-size: 1.8em
+      margin-bottom: 0.5em
+    p
+      font-size: 1.2em
+      line-height: 1em
+      padding: 0 2em
+    .button
+      font-size: 1rem
+      padding: 0.8em 0
+  .separator
+    margin-bottom: 1.5em
+    margin-top: 0.5em
+    .fa
+      font-size: 1.3em
+
 
 // LARGE
 // ======
@@ -120,3 +163,12 @@ article
   .menu-wrapper
     .offset-two
       margin-left: 16.66667%
+  .action
+    h1
+      font-size: 2em
+      margin-bottom: 0.2em
+    p
+      font-size: 1.5em
+      line-height: 1em
+    .button
+      font-size: 1.2em

@@ -2,11 +2,8 @@
 
 @charset "UTF-8"
 
-
 html, body
   height: 100%
-
-html, body
   font-size: $font-size-base
   -webkit-text-size-adjust: $font-size-base
   -ms-text-size-adjust: $font-size-base
@@ -78,13 +75,13 @@ a
   color: $gray
   text-decoration: underline
   outline: 0
-
-a:hover, a:focus, a:active
-  outline: 0
-  color: $highlighted
-
-a:focus
-  outline: thin dotted
+  &:hover,
+  &:focus,
+  &:active
+    outline: 0
+    color: $highlighted
+  &:focus
+    outline: thin dotted
 
 img, video, audio
   max-width: $max-width
@@ -92,17 +89,15 @@ img, video, audio
   vertical-align: middle
   border: 0
 
-audio,
-canvas,
-video
-  display: inline-block
-  @include inline-flex(inline)
-  *zoom: 1
 
-figure
-  margin: 0
-  width: $max-hight
-  height: auto
+=default-paragraph
+  font-size: 1.4em
+  font-weight: 100
+  padding: 0 0.5em
+  line-height: 1.3em
+  margin: 0 auto 0.89286em
+  max-width: 38.35714em
+
 
 
 
@@ -298,3 +293,16 @@ table
   height: $max-hight
   display: block
   top: 0
+
+// html5 elements
+audio,
+canvas,
+video
+  display: inline-block
+  @include inline-flex(inline)
+  *zoom: 1
+
+figure
+  margin: 0
+  width: $max-hight
+  height: auto

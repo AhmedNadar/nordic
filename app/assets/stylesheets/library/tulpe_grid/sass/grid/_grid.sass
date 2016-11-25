@@ -98,6 +98,32 @@
   margin-left: 91.66667%
 
 
+.offset-none-right
+  margin-right: 0%
+.offset-one-right
+  margin-right: 8.33333%
+.offset-two-right
+  margin-right: 16.66667%
+.offset-three-right
+  margin-right: 25%
+.offset-four-right
+  margin-right: 33.33333%
+.offset-five-right
+  margin-right: 41.66667%
+.offset-six-right
+  margin-right: 50%
+.offset-seven-right
+  margin-right: 58.33333%
+.offset-eight-right
+  margin-right: 66.66667%
+.offset-nine-right
+  margin-right: 75%
+.offset-ten-right
+  margin-right: 83.33333%
+.offset-eleven-right
+  margin-right: 91.66667%
+
+
 // colored column ordered
 // ======================
 .order-first-column ,
@@ -344,15 +370,17 @@
   // tablet: 768px / 48.000em
   @include respond-to(medium)
     .container
-      width: 49rem
+      width: 65rem
+      // width: 49rem
 
   // laptop: 1024px / 64.000em
   @include respond-to(large)
     .container
-      width: 65rem
+      width: 91rem
+      // width: 65rem
 
-  // laptop-large: 1440px / 90.000em
+  // laptop-large: 1440px & 4K Extra large screen : 2560px/ 90.000em
   @include respond-to(wide)
     .container
-      width: 91rem
-
+      width: 100%
+      // width: 91rem

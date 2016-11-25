@@ -1,0 +1,252 @@
+/*~~~~~~~~~~~~~~~~~~~ Company ~~~~~~~~~~~~~~~~~~~*/
+.company
+  .intro
+    +bottom-margin(1em)
+    .top, .details
+      +alignment-center(center)
+    .top
+      background: asset-url('company_intro_bg.png') no-repeat center center
+    .details
+      background: asset-url('company_details_bg.png') no-repeat center center
+    h1
+      +header-1
+      &:after
+        display: none
+    p
+      +default-paragraph
+      &:nth-child(2)
+        margin-bottom: 0
+        margin-top: 1em
+    h1, p
+      +top-margin(2em)
+      +bottom-margin(1em)
+
+  // time line
+  .container-timeline
+    padding: 1em 0 0 0
+    background: asset-url('timeline_bg.png') repeat center center
+    h1
+      margin-bottom: 1rem
+    p
+      color: #26364C
+      font-weight: 200
+      font-size: 2.3em
+      margin-bottom: 0
+      padding: 0 1em
+      padding: 0
+      font-size: 1.4em
+      line-height: 1.4em
+      margin: 0
+
+    .timeline
+      color: $white
+      width: 100%
+      position: relative
+      transition: all 0.3s linear 0s
+      -moz-transition: all 0.3s linear 0s
+      -webkit-transition: all 0.3s linear 0s
+      -ms-transition: all 0.3s linear 0s
+      -o-transition: all 0.3s linear 0s
+      &:before
+        margin-left: -0.5px
+        content: ''
+        background: #2D4059
+        z-index: 0
+        position: absolute
+        left: 13.5%
+        height: 100%
+        width: 2px
+        top: 0
+        margin-top: 2em
+
+    .wrapper:nth-child(1)
+      h1
+        +header-1
+        margin-bottom: 0.4em
+      p
+        margin: 0
+      section:nth-child(2):before
+        top: 50%
+      section:last-child:before
+        top: 0
+        height: 30%
+    .timeline-box
+      width: 100%
+      height: 100%
+      padding: 0 0.7em
+      margin: 2em 0
+      position: relative
+      transition: all 0.3s linear 0s
+      -webkit-transition: all 0.3s linear 0s
+      .details
+        -webkit-order: 1
+        -ms-flex-order: 1
+        order: 1
+        border-radius: 0.4em
+        padding: 0.8em
+        background-color: #2D4059
+        border-left: 0.4rem solid rgb(255, 54, 93)
+        &:after
+          content: ""
+          position: absolute
+          width: 1.7em
+          height: 1.7em
+          border: 1px solid #ff365d
+          -webkit-transform: scale(0.607)
+          transform: scale(0.607)
+          left: -1em
+          top: 1em
+          background-color: #ff365d
+          z-index: 0
+          border-radius: 2em
+      .title
+        padding: 0
+        margin: 0
+        h2
+          color: $white
+          margin: 0
+          font-size: 1.5em
+          font-weight: 600
+        p
+          color: #FFD460
+          font-size: 0.9em
+      .timeline-content
+        display: none
+        p
+          // color: rgb(208, 216, 224)
+          font-size: 1em
+          font-weight: 100
+          letter-spacing: 0.03em
+      .pic
+        -webkit-order: -1
+        -ms-flex-order: -1
+        order: -1
+        padding-top: 0.6em
+        padding-left: 0
+        img
+          width: 70%
+
+
+  // .company .timeline .timeline-box  .title p
+  //     font-size: 1.3rem
+  //     font-weight: 400
+
+
++respond-to( small )
+  .company
+    .action
+      figcaption
+        padding: 0 1em
+        margin: 0
+
+    .timeline
+      .timeline-box
+        .pic
+          img
+            width: 50%
+
++respond-to( medium )
+  .company
+    .intro
+      p
+        text-align: left
+    .action
+      p
+        font-size: 1.2em
+    .container-timeline
+      .timeline
+        &:before
+          content: ''
+          left: 50%
+          height: 100%
+        .timeline-box
+          .details.even
+            -webkit-order: 1
+            -ms-flex-order: 1
+            order: 1
+            border-left: 0.4em solid rgb(255, 54, 93)
+            border-right: none
+            &:after
+              left: -1.1rem
+              top: 1.5rem
+          .timeline-content
+            display: block
+            border-radius: 0.3em
+            padding: 1em
+            border: 1px solid rgba(45, 64, 91, 0.04)
+            background-color: #F8FAFB
+          .details
+            -webkit-order: -1
+            -ms-flex-order: -1
+            order: -1
+            border: 1px solid #222
+            border-radius: 0.6em
+            padding: 1em
+            background-color: #2D4059
+            border-right: 0.4em solid rgb(255, 54, 93)
+            &:after
+              content: ''
+              position: absolute
+              width: 1.7em
+              height: 1.7em
+              border: 1px solid rgb(255, 54, 93)
+              transform: scale(0.707) rotate(45deg)
+              right: -1em
+              left: initial
+              top: 1.5em
+              background-color: rgb(255, 54, 93)
+              z-index: 0
+              border-radius: 2em
+            .title
+              h2
+                font-size: 2em
+              p
+                font-size: 1.2em
+
+          .pic
+            img
+              width: 40%
+          .timeline-content.even
+            -webkit-order: -1
+            -ms-flex-order: -1
+            order: -1
+            &:after
+              left: -1.6em
+              top: 1.5em
+            // .title
+            //   h2
+            //     font-size: 1.7em
+            //     font-weight: 700
+            //     margin-bottom: 0.3em
+            //   p
+            //     color: #FFD460
+            //     font-size: 1em
+            //     font-weight: 600
+          .pic
+            -webkit-order: -1
+            -ms-flex-order: -1
+            -webkit-box-ordinal-group: 1
+            order: 0
+            padding-top: 1em
+            padding-right: 0
+
+
+
+
+
+
+
++respond-to( large )
+  .company
+    .action
+      figcaption
+        padding: 5em 3em 1em
+        margin-bottom: 2em
+    .timeline
+      .timeline-box
+        .details
+        &:after
+          /*left: 38rem*/
+          left: initial
+        &:before
+          left: 49.9%
