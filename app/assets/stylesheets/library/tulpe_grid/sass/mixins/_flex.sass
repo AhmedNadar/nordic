@@ -116,19 +116,23 @@
   align-self:       flex- + $direction
   align-items:      flex- + $direction
   justify-content:  flex- + $direction
-  text-align: $direction
+  text-align:       $direction
+  // +alignment-direct(left|right)
 
 =alignment-center($direction)
+  align-content:        $direction
   align-self:           $direction
   align-items:          $direction
   justify-content:      $direction
   text-align:           $direction
   -webkit-align-items:  $direction
+  margin: 0 auto
+  // +alignment-center(center)
 
 =alignment-space($direction)
   align-self:       flex- + $direction
   justify-content:  space- + $direction
   align-content:    space- + $direction
-  text-align: $direction
+  text-align:       $direction
 
 
